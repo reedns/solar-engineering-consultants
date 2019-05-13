@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Solar Engineering Consultants
 image: /img/home-jumbotron.jpg
 heading: Solar Engineering Consultants
 subheading: Commissioning & Performance Testing Expertise
