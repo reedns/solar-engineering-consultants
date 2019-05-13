@@ -14,3 +14,24 @@ CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
+
+const config = { }
+// Important to remove your backend config and replace it in this setup
+if (process.env.NODE_ENV === 'development') {
+  const FileSystemBackend = require('netlify-cms-backend-fs');
+  config.backend = {
+    "name": "file-system",
+    "api_root": "/api"
+  }
+  config.display_url = "http://localhost:8000"
+  CMS.registerBackend('file-system', FileSystemBackend)
+} else {
+  config.backend = {
+    "backend": {
+      "name": "github",
+      "repo": "reedns/solar-engineering-consultants",
+      "branch": "master"
+    }
+  }
+}
+CMS.init({config})
