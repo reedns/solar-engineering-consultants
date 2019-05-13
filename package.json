@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
+  "name": "solar-engineering-consultants",
+  "description": "Portfolio site for Caleb Saunders",
   "version": "1.1.3",
-  "author": "Austin Green",
+  "author": "Reed Saunders",
   "dependencies": {
     "bulma": "^0.7.0",
     "gatsby": "^2.1.34",
