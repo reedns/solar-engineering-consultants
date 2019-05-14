@@ -5,17 +5,28 @@ image: /img/home-jumbotron.jpg
 heading: Solar Engineering Consultants
 subheading: Commissioning & Performance Testing Expertise
 mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  title: Dedicated to providing Expert Quality, Efficient Solutions for your Project to help reduce LCOE and OpEx
+  description: ''
+info:
+  lead: >
+    Solar Engineering Consultants (SEC) specializes in helping owners, developers, EPCs, and financiers
+    in solar energy and storage projects from concept to project completion.
+  content: >
+    SEC is dedicated to providing
+    exceptional expertise, performance, responsiveness, and quality to our clients. We are a network of
+    engineers and consultants who have the expertise to help projects through the early stages of siting
+    and interconnection when risk is highest, through the permitting, engineering, construction, commissioning,
+    and financial close-out phases. Once projects are operational, we have the expertise to help troubleshoot
+    issues and optimize operations for utility scale and C&I projects or portfolios.
+  nextLead: >
+    SEC is dedicated to providing quality, best-in-class solutions and focused on providing value to our client's
+    projects by leveraging our depth of experience to provide a detailed or streamlined focus as appropriate,
+    in order to meet our client’s project needs.
+  nextContent: >
+    We concentrate on providing efficient solutions for our client's projects
+    throughout the lifecycle, dedicating our efforts to mitigating risk and helping to ensure projects stay within budget
+    and on schedule. Our purpose is to solar problems and do our part to help our clients reduce LCOE and OpEx for their projects.
+    We welcome the opportunity to work with you on projects large or small.
 intro:
   blurbs:
     - image: /img/coffee.png

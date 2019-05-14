@@ -12,7 +12,7 @@ export const IndexPageTemplate = ({
   heading,
   subheading,
   mainpitch,
-  description,
+  info,
   intro,
 }) => (
   <div>
@@ -40,8 +40,8 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              '#00ab33 0.5rem 0px 0px, #00ab33 -0.5rem 0px 0px',
+            backgroundColor: '#00ab33',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -53,8 +53,8 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              '#00ab33 0.5rem 0px 0px, #00ab33 -0.5rem 0px 0px',
+            backgroundColor: '#00ab33',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -74,16 +74,17 @@ export const IndexPageTemplate = ({
                   <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
                 </div>
                 <div className="columns">
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
+                    <p>
+                      <strong>{info.lead}</strong>
+                      {info.content}
+                    </p>
+                    <p>
+                      <strong>{info.nextLead}</strong>
+                      {info.nextContent}
+                    </p>
                   </div>
                 </div>
                 <Features gridItems={intro.blurbs} />
@@ -120,7 +121,7 @@ IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
-  description: PropTypes.string,
+  info: PropTypes.object,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -137,7 +138,7 @@ const IndexPage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
+        info={frontmatter.info}
         intro={frontmatter.intro}
       />
     </Layout>
@@ -172,7 +173,12 @@ export const pageQuery = graphql`
           title
           description
         }
-        description
+        info {
+          lead
+          content
+          nextLead
+          nextContent
+        }
         intro {
           blurbs {
             image {

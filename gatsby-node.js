@@ -11,6 +11,7 @@ exports.createPages = ({ actions, graphql }) => {
       allMarkdownRemark(limit: 1000) {
         edges {
           node {
+            html
             id
             fields {
               slug
