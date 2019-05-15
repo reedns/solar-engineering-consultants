@@ -4,24 +4,44 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, content, image, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
+    <div className="content">
+      <div
+        style={{
+          display: 'block',
+          textAlign: 'center',
+          backgroundColor: '#009e87',
+          padding: '1rem 0'
+        }}
+      >
+        <img
+          style={{width: 128, borderRadius: '50%'}}
+          alt="Caleb Saunders"
+          src="/img/profile pic.png"
+        >
+        </img>
+        <h2
+          className="has-text-weight-bold is-size-1"
+          style={{ color: 'white', margin: '1rem 0 0' }}
+        >
+          {title}
+        </h2>
+      </div>
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="section">
+                <PageContent className="content" content={content} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
 
@@ -40,6 +60,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        image={post.frontmatter.image}
       />
     </Layout>
   )
@@ -57,6 +78,13 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

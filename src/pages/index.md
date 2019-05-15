@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Solar Engineering Consultants
-image: /img/home-jumbotron.jpg
+image: /img/large-solar-array.jpg
 heading: Solar Engineering Consultants
 subheading: Commissioning & Performance Testing Expertise
 mainpitch:
