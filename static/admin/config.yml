@@ -53,4 +53,4 @@ collections:
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string},{label: Description, name: description, widget: text},{label: Blurbs, name: blurbs, widget: list,fields: [{label: Image, name: image, widget: image},{label: Text, name: text, widget: text},{label: Title, name: title, widget: string},{label: Lead, name: lead, widget: string},{label: Utility, name: utility, widget: string},{label: Power, name: power, widget: string}]}]}

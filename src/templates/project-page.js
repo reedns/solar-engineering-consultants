@@ -35,14 +35,10 @@ export const ProjectPageTemplate = ({
               <p>{description}</p>
             </div>
           </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <Features gridItems={intro.blurbs} />
-            </div>
-          </div>
         </div>
       </div>
     </section>
+    <Features gridItems={intro.blurbs} />
   </div>
 )
 
@@ -105,6 +101,10 @@ export const projectPageQuery = graphql`
                 }
               }
             }
+            title
+            utility
+            lead
+            power
             text
           }
           heading

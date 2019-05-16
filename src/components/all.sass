@@ -78,6 +78,11 @@ $black: #2b2523
   padding: 1rem
   color: $primary-invert !important
 
+.project-block
+  &:nth-child(odd)
+    background-color: #f9f9f9
+
+
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
@@ -133,10 +138,10 @@ $menu-label-color: $white-ter
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
 
+// bulma overrides
 $section-padding: 2rem 1.5rem;
 
 @import "~bulma"
-
 
 // responsiveness
 +tablet-only
