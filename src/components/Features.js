@@ -4,41 +4,44 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLightbulb, faBolt } from '@fortawesome/free-solid-svg-icons'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
+const iconStyle = { color: '#009e87' }
+const iconTextStyle = { margin: "0 1rem 0 0.5rem" }
+const titleStyle = { marginBottom: 0 }
+const descriptionStyle = { marginTop: "1rem" }
+const imgContainerStyle = { width: '100%', display: 'inline-block' }
+
 const FeatureGrid = ({ gridItems }) => (
   <div>
     {gridItems.map(item => (
-      <div className="columns project-block is-centered">
-        <div className="column is-10 is-offset-1">
-          <div className="columns is-vcentered ">
-            <div key={item.text} className="column is-one-third">
-              <section className="section">
-                <div className="has-text-centered">
-                  <div
-                    style={{
-                      width: '240px',
-                      display: 'inline-block',
-                    }}
-                  >
-                    <PreviewCompatibleImage imageInfo={item} />
+      <div className="columns project-block is-mobile is-centered">
+        <section className="section section--gradient">
+          <div className="column is-10 is-offset-1">
+            <div className="columns is-vcentered ">
+              <div key={item.text} className="column is-one-third">
+                <section className="section">
+                  <div className="has-text-centered">
+                    <div style={imgContainerStyle}>
+                      <PreviewCompatibleImage imageInfo={item} />
+                    </div>
                   </div>
-                </div>
-              </section>
-            </div>
-            <div className="column is-two-thirds">
-              <h4 style={{ marginBottom: 0 }}>{item.title} </h4>
-              <div style={{ marginBottom: '1rem' }}>
-                <FontAwesomeIcon icon={faLightbulb} style={{ color: '#009e87' }} />
-                <span style={{ margin: "0 1rem 0.5rem" }}>{item.utility}</span>
-                <FontAwesomeIcon icon={faBolt} style={{ color: '#009e87' }} />
-                <span style={{ margin: "0 0.5rem 1rem" }}>{item.power}</span>
+                </section>
               </div>
-              <p>
-                <strong>{item.lead} </strong>
-                {item.text}
-              </p>
+              <div className="column is-two-thirds">
+                <h4 style={titleStyle}>{item.title} </h4>
+                <div>
+                  <FontAwesomeIcon icon={faLightbulb} style={iconStyle} />
+                  <span style={iconTextStyle}>{item.utility}</span>
+                  <FontAwesomeIcon icon={faBolt} style={{ color: '#009e87' }} />
+                  <span style={iconTextStyle}>{item.power}</span>
+                </div>
+                <p style={descriptionStyle}>
+                  <strong>{item.lead} </strong>
+                  {item.text}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     ))}
   </div>
