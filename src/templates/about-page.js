@@ -10,21 +10,23 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
   return (
     <div className="content">
       <div
+        className="full-width-image-container margin-top-0"
         style={{
-          display: 'block',
-          textAlign: 'center',
-          backgroundColor: '#009e87',
-          padding: '1rem 0'
+          backgroundImage: `
+            linear-gradient(
+              rgba(0, 0, 0, 0.2),
+              rgba(0, 0, 0, 0.2)
+            ),
+            url(${
+              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            })
+          `,
+          backgroundPosition: 'bottom left',
+          backgroundAttachment: 'fixed',
         }}
       >
-        <img
-          style={{width: 128, borderRadius: '50%'}}
-          alt="Caleb Saunders"
-          src="/img/profile pic.png"
-        >
-        </img>
         <h2
-          className="has-text-weight-bold is-size-1"
+          className="has-text-weight-bold is-size-1 title-text"
           style={{ color: 'white', margin: '1rem 0 0' }}
         >
           {title}
@@ -36,6 +38,14 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
             <div className="column is-10 is-offset-1">
               <div className="section">
                 <PageContent className="content" content={content} />
+                <div className="has-text-centered">
+                  <img
+                    style={{width: 128, borderRadius: '50%'}}
+                    alt="Caleb Saunders"
+                    src="/img/profile pic.png"
+                  >
+                  </img>
+                </div>
               </div>
             </div>
           </div>

@@ -17,11 +17,17 @@ export const IndexPageTemplate = ({
     <div
       className="full-width-image margin-top-0"
       style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `bottom right`,
-        backgroundAttachment: `fixed`,
+        backgroundImage: `
+          linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(${
+            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          })
+        `,
+        backgroundPosition: 'bottom center',
+        backgroundAttachment: 'fixed',
       }}
     >
       <div

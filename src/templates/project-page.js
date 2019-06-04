@@ -18,6 +18,8 @@ export const ProjectPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
+        backgroundPosition: `bottom right`,
+        backgroundAttachment: `fixed`,
       }}
     >
       <h2

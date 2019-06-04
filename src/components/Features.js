@@ -9,12 +9,13 @@ const iconTextStyle = { margin: "0 1rem 0 0.5rem" }
 const titleStyle = { marginBottom: 0 }
 const descriptionStyle = { marginTop: "1rem" }
 const imgContainerStyle = { width: '100%', display: 'inline-block' }
+const sectionStyle = { width: '100%' }
 
 const FeatureGrid = ({ gridItems }) => (
   <div>
     {gridItems.map(item => (
-      <div className="columns project-block is-mobile is-centered">
-        <section className="section section--gradient">
+      <div key={item.title} className="columns project-block is-mobile is-centered">
+        <section className="section section--gradient" style={sectionStyle}>
           <div className="column is-10 is-offset-1">
             <div className="columns is-vcentered ">
               <div key={item.text} className="column is-one-third">

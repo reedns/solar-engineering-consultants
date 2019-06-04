@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Solar Engineering Consultants
-image: /img/large-solar-array.jpg
+image: /img/alternative-alternative-energy-clean-energy-421888.jpg
 heading: Solar Engineering Consultants
 subheading: Commissioning & Performance Testing Expertise
 mainpitch:

@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 title: About SEC
-image: /img/solarsunset.jpg
+image: /img/alternative-energy-building-clouds.jpg
 ---
 SEC is a network of engineers and consultants who have expertise in bringing solar and energy storage projects
 from concept to completion.  We are dedicated to providing high quality, best in class solutions focused on
