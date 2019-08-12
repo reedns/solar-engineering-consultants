@@ -4,7 +4,12 @@ import { ServicePageTemplate } from '../../templates/service-page'
 
 const ServicePagePreview = ({ entry, getAsset }) => {
   return(
-    <ServicePagePreview />
+    <ServicePageTemplate
+      title={entry.getIn(['data', 'title'])}
+      content={widgetFor('body')}
+      image={entry.getIn(['data', 'image'])}
+      heading={entry.getIn(['data', 'heading'])}
+    />
   )
 }
 
