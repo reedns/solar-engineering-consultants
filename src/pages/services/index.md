@@ -2,7 +2,7 @@
 templateKey: service-page
 path: /services
 title: Services
-image: /img/300-sl-alternative-energy-blue-sky-371900.jpg
+image: /img/solar-cell.jpg
 heading: Services Provided by SEC
 
 ---
