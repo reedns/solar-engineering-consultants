@@ -3,10 +3,12 @@ import CMS from 'netlify-cms-app'
 import AboutPagePreview from './preview-templates/AboutPagePreview'
 import ProjectPagePreview from './preview-templates/ProjectPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
+import ServicePagePreview from './preview-templates/ServicePagePreview'
 
 CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('projects', ProjectPagePreview)
+CMS.registerPreviewTemplate('services', ServicePagePreview)
 
 const config = { }
 // Important to remove your backend config and replace it in this setup
