@@ -3,7 +3,7 @@ templateKey: index-page
 title: Solar Engineering Consultants
 image: /img/alternative-alternative-energy-clean-energy-421888.jpg
 heading: Solar Engineering Consultants
-subheading: Commissioning & Performance Testing Expertise
+subheading: Engineering, Development & Commissioning Expertise
 mainpitch:
   title: Dedicated to providing Expert Quality, Efficient Solutions for your Project to help reduce LCOE and OpEx
   description: ''
@@ -25,7 +25,7 @@ info:
   nextContent: >
     We concentrate on providing efficient solutions for our client's projects
     throughout the lifecycle, dedicating our efforts to mitigating risk and helping to ensure projects stay within budget
-    and on schedule. Our purpose is to solar problems and do our part to help our clients reduce LCOE and OpEx for their projects.
+    and on schedule. Our purpose is to solve problems and do our part to help our clients reduce LCOE and OpEx for their projects.
     We welcome the opportunity to work with you on projects large or small.
 intro:
   blurbs:

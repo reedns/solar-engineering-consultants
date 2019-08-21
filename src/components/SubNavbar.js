@@ -33,7 +33,7 @@ const SubNavbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="subnavbar is-transparent"
+        className="subnavbar is-transparent has-text-centered"
         role="navigation"
         aria-label="main-navigation"
       >
@@ -55,23 +55,20 @@ const SubNavbar = class extends React.Component {
             className={`subnavbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="subnavbar-start has-text-centered">
-              <AnchorLink className="navbar-item" href='#qa'>
-                Engineering & QA
-              </AnchorLink>
-              <AnchorLink className="navbar-item" href="#assets-data">
-                Asset Management & Data Analytics
+              <AnchorLink className="navbar-item" href="#engineering">
+                Project Engineering
               </AnchorLink>
               <AnchorLink className="navbar-item" href="#commissioning">
-                Commissioning
+                Commissioning & Performance Testing
               </AnchorLink>
               <AnchorLink className="navbar-item" href="#development">
                 Development
               </AnchorLink>
-              <AnchorLink className="navbar-item" href="#due-dilligence">
-                Due Dilligence
+              <AnchorLink className="navbar-item" href="#assets-data">
+                Asset Management & Data Analytics
               </AnchorLink>
-              <AnchorLink className="navbar-item" href="#block-chain">
-                Block Chain & Edge Computing
+              <AnchorLink className="navbar-item" href='#qa'>
+                Engineering & QA
               </AnchorLink>
             </div>
             <div className="subnavbar-end has-text-centered">

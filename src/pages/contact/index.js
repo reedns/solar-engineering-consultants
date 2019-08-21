@@ -11,7 +11,10 @@ function encode(data) {
 export default class Index extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isValidated: false }
+    this.state = {
+      isValidated: false,
+      sectionHeight: '100%'
+    }
   }
 
   handleChange = e => {
@@ -33,10 +36,28 @@ export default class Index extends React.Component {
       .catch(error => alert(error))
   }
 
+  updateSectionHeight = () => {
+    console.log(window.innerHeight)
+    if(window.innerHeight > 600) {
+      this.setState({ sectionHeight: '78vh' })
+    } else {
+      this.setState({ sectionHeight: '100%' })
+    }
+  }
+
+  componentDidMount() {
+    this.updateSectionHeight()
+    window.addEventListener('resize', this.updateSectionHeight.bind(this))
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateSectionHeight.bind(this))
+  }
+
   render() {
     return (
       <Layout>
-        <section className="section">
+        <section className="section" style={{ height: this.state.sectionHeight }}>
           <div className="container">
             <div className="content">
               <h1>Contact</h1>

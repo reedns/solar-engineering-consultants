@@ -1,13 +1,13 @@
 ---
 templateKey: 'project-page'
 path: /projects
-title: Projects by SEC
+title: SEC Projects
 image: /img/alternative-alternative-energy-clean-159397.jpg
 heading: Project Experience
 description: >
-  The SEC principal has contracted services with over 1 GW of projects, having directly
-  overseen the development, engineering, management, construction, and commissioning of
-  more than 150 MW of operational commercial and utility scale solar PV assets.  SEC has
+  The SEC principal has contracted services with over 1 GW of projects and directly
+  overseen the development, engineering, management, construction, and commissioning
+  of more than 150 MW of operational utility scale and commercial solar PV assets. SEC has
   worked on projects throughout the U.S. Including the states of California, Nevada,
   Arizona, Idaho, Oregon, Indiana, Maryland, Vermont, and Massachusetts.  We possess
   vast experience navigating all stages of the solar and energy storage project lifecycle
@@ -26,15 +26,6 @@ intro:
         analysis of operational data to ensure optimal site operation for testing, regression analysis
         of data, collaboration with EPC, SCADA provider, and owner throughout test period, certified
         performance with progress and final test reports for owners, bank engineers, and utility
-    - image: /img/am portfolio.png
-      title: 890 MW PV Asset Management, performance eval & modeling
-      utility: Numerous, national portfolio
-      lead: "Helped client bidding O&M services define portfolio performance and quantify risk:"
-      power: 890 MW
-      text: >
-        Evaluated 479 projects on individual and portfolio level analysis, NREL modeled projects to quantify
-        potential LD risk with limited resource data and portfolio targets provided very late in process, NSRDB
-        vs. client TMY analysis
     - image: /img/55MW-PV-QF-1-axis-Kuna-ID.png
       title: 55 MW PV QF, design, engineering mgmt, 138 kV Interconnection
       utility: IPCo
@@ -51,6 +42,15 @@ intro:
       text: >
         Managed, tracked, and drove commissioning and start-up process, managed and scheduled stakeholders and resources, schedules,
         and issues.  Managed utility, capacity, and performance testing.  Managed close out for mechanical and substantial completion.
+    - image: /img/am portfolio.png
+      title: 800 MW PV Asset Management, performance eval & modeling
+      utility: Numerous, national portfolio
+      lead: "Helped client bidding O&M services define portfolio performance and quantify risk:"
+      power: 800 MW
+      text: >
+        Evaluated 450+ projects on individual and portfolio level analysis, NREL modeled projects to quantify
+        potential LD risk with limited resource data and portfolio targets provided very late in process, NSRDB
+        vs. client TMY analysis
     - image: /img/image8.png
       title: 60 MW PV ATC fatal flaw study & CAISO Interconnection Request
       utility: PG&E, CAISO

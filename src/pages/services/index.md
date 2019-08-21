@@ -4,7 +4,6 @@ path: /services
 title: Services
 image: /img/solar-cell.jpg
 heading: Services Provided by SEC
-
 ---
 
 Solar Engineering Consultants offers a wide array of custom and standardized services throughout the
@@ -14,55 +13,20 @@ We are dedicated to helping clients streamline projects wherever possible and he
 lowest LCOE for their project.  Below is a sample list of services that we can offer to your project,
 please contact us if you have any questions on how we can help.
 
-#### Independent Engineering & QA Services {#qa}
+#### Project Engineering {#engineering}
 
-Solar Engineering Consultants offers high quality IE & QA services across the board and has expertise
-engineering and commissioning projects of all sizes from concept to completion:
+Solar Engineering consultants provides detailed project engineering services for commercial, C&I, and utility solar and storage projects:
 
-* Independent review of all engineered plan sets, permits & contracts
-* Financial close requirement support, management & verification
-* Design optimization & value engineering
-* Independent QA construction inspections
-* Acceptance/Witness testing oversight
-* Technology DD review & risk analysis identification
-* EPC, Engineering, and vendor RFP’s
-* Contractor vetting and construction oversight
-* Division of Responsibilities scope documentation
-* Project schedule development and review
-* Project budget development and review
-* Technology risk review
-* EPC/Engineering contract & SOW development and review
-* Quality Assurance Plan development and review
-* Safety Plan development and review
+* DC, AC, MV & Substation/HV electrical engineering for PV and storage projects
+* SCADA, EMS, and BMS coordination
+* Electrical design, site layout, and equipment optimization
+* Tracker spacing and block geometry optimization
+* PVsyst and energy model creation, updates
+* Arc flash and short circuit studies
+* Equipment specification
+* Inter-discipline coordination with Structural, Civil, and Architectural Engineers
 
-#### Asset Management & Data Analytics Services {#assets-data}
-
-SEC provides comprehensive asset performance services:
-
-* Operational asset performance audits
-* Root cause analysis for production shortfalls
-* Trending and performance analytics
-* Repowering scenario simulation
-* Accurate and repeatable dashboard creation
-* LMP node historical analysis
-* PPA scenario TOU simulation
-* Monte-Carlo simulation
-* Statistical analysis
-* PVsyst energy model evaluation and updates
-* Data aggregation, curation and reporting
-* Site optimization to maximize uptime
-* O&M work order review
-* Financial model update based on site specific findings
-* Contract administration and compliance
-* PPA and incentive invoicing
-* Operating budget preparation
-* Operating expense scheduling
-* Quarterly Budget Variance Reporting
-* Insurance Compliance Analysis
-* Plant Revenue Reporting
-* Regulatory agency Reporting
-
-#### Commissioning Services {#commissioning}
+#### Commissioning & Performance Testing {#commissioning}
 
 Solar Engineering Consultants will provide thorough independent commissioning services for
 your project:
@@ -97,7 +61,7 @@ your project:
 * Capacity & Availability Test reports
 * Commissioning Test reports
 
-#### Development Services {#development}
+#### Development {#development}
 
 Solar Engineering consultants offers project tailored services to developers, land owners, building owners,
 green data center providers, and investors who are looking to install or acquire a solar project.
@@ -120,7 +84,55 @@ green data center providers, and investors who are looking to install or acquire
 * Rate tariff savings, tariff comparison, and TOU time shifting analysis
 * Land use permitting
 
-#### Due Diligence Services {#due-dilligence}
+#### Asset Management & Data Analytics {#assets-data}
+
+SEC provides comprehensive asset performance services:
+
+* Operational asset performance audits
+* Root cause analysis for production shortfalls
+* Trending and performance analytics
+* Repowering scenario simulation
+* Accurate and repeatable dashboard creation
+* LMP node historical analysis
+* PPA scenario TOU simulation
+* Monte-Carlo simulation
+* Statistical analysis
+* PVsyst energy model evaluation and updates
+* Data aggregation, curation and reporting
+* Site optimization to maximize uptime
+* O&M work order review
+* Financial model update based on site specific findings
+* Contract administration and compliance
+* PPA and incentive invoicing
+* Operating budget preparation
+* Operating expense scheduling
+* Quarterly Budget Variance Reporting
+* Insurance Compliance Analysis
+* Plant Revenue Reporting
+* Regulatory agency Reporting
+
+#### Independent Engineering & QA {#qa}
+
+Solar Engineering Consultants offers high quality IE & QA services across the board and has expertise
+engineering and commissioning projects of all sizes from concept to completion:
+
+* Independent review of all engineered plan sets, permits & contracts
+* Financial close requirement support, management & verification
+* Design optimization & value engineering
+* Independent QA construction inspections
+* Acceptance/Witness testing oversight
+* Technology DD review & risk analysis identification
+* EPC, Engineering, and vendor RFP’s
+* Contractor vetting and construction oversight
+* Division of Responsibilities scope documentation
+* Project schedule development and review
+* Project budget development and review
+* Technology risk review
+* EPC/Engineering contract & SOW development and review
+* Quality Assurance Plan development and review
+* Safety Plan development and review
+
+#### Due Diligence {#due-dilligence}
 
 Solar Engineering Consultants offers thorough and efficient due diligence services to ensure
 
@@ -145,7 +157,7 @@ Solar Engineering Consultants offers thorough and efficient due diligence servic
 * Major procurement agreements
 * Project investment report
 
-#### Blockchain & Edge Computing Host Services {#block-chain}
+#### Blockchain & Edge Computing Host {#block-chain}
 
 Solar Engineering Consultants works with blockchain and edge computing host service providers by offering services which include:
 
@@ -159,3 +171,4 @@ Solar Engineering Consultants works with blockchain and edge computing host serv
 * Custom design solutions from generation facility through server rack
 * Independent engineering & QA services
 * Owners representative services
+
