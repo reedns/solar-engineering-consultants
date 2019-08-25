@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/sec_logo.png'
-import NavLink from './NavLink'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -63,18 +62,18 @@ render() {
           >
             <div className="navbar-start has-text-centered"></div>
             <div className="navbar-end has-text-left">
-              <NavLink to="/services">
+              <Link partiallyActive={true} activeClassName="active" className="navbar-item" to="/services">
                 Services
-              </NavLink>
-              <NavLink to="/projects">
+              </Link>
+              <Link activeClassName="active" className="navbar-item" to="/projects">
                 Projects
-              </NavLink>
-              <NavLink to="/about">
+              </Link>
+              <Link  activeClassName="active" className="navbar-item" to="/about">
                 Company
-              </NavLink>
-              <NavLink to="/contact">
+              </Link>
+              <Link activeClassName="active" className="navbar-item" to="/contact">
                 Contact
-              </NavLink>
+              </Link>
 
             </div>
           </div>

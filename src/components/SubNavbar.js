@@ -1,6 +1,7 @@
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Link } from 'gatsby'
+import { globalHistory } from '@reach/router';
 
 const SubNavbar = class extends React.Component {
   constructor(props) {
@@ -8,7 +9,6 @@ const SubNavbar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
-      path: window.location.pathname
     }
   }
 
@@ -33,7 +33,7 @@ const SubNavbar = class extends React.Component {
   }
 
   onServicesIndex = () => {
-    return this.state.path === '/services'
+    return globalHistory.location.pathname === '/services'
   }
 
   displayAnchorLinks = () => {
@@ -89,12 +89,12 @@ const SubNavbar = class extends React.Component {
             className={`subnavbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="subnavbar-start">
-              <Link className={`subnav-link ${indexActive}`} to="/services">
+              <Link activeClassName="active" to="/services">
                 Services
               </Link>
               <span className="navbar-item"> | </span>
               { this.displayAnchorLinks() }
-              <Link className={`subnav-link ${astmActive}`} to="/services/astm-capacity-testing">
+              <Link activeClassName="active" to="/services/astm-capacity-testing">
                 ASTM Capacity Testing
               </Link>
             </div>
