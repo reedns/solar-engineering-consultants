@@ -1,5 +1,6 @@
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Link } from 'gatsby'
 
 const SubNavbar = class extends React.Component {
   constructor(props) {
@@ -7,6 +8,7 @@ const SubNavbar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
+      path: window.location.pathname
     }
   }
 
@@ -30,10 +32,42 @@ const SubNavbar = class extends React.Component {
     )
   }
 
+  onServicesIndex = () => {
+    return this.state.path === '/services'
+  }
+
+  displayAnchorLinks = () => {
+    if (this.onServicesIndex()) {
+      return (
+        <div className="anchors">
+          <AnchorLink className="navbar-item" href="#engineering">
+            Project Engineering
+          </AnchorLink>
+          <AnchorLink className="navbar-item" href="#commissioning">
+            Performance Testing
+          </AnchorLink>
+          <AnchorLink className="navbar-item" href="#development">
+            Development
+          </AnchorLink>
+          <AnchorLink className="navbar-item" href="#assets-data">
+            Asset Management
+          </AnchorLink>
+          <AnchorLink className="navbar-item" href='#qa'>
+            QA
+          </AnchorLink>
+          <span className="navbar-item"> | </span>
+        </div>
+      )
+    }
+  }
+
   render() {
+    const textPosition = this.onServicesIndex() ? 'centered' : 'left'
+    const indexActive = this.onServicesIndex() ? 'active' : ''
+    const astmActive = this.onServicesIndex() ? '' : 'active'
     return (
       <nav
-        className="subnavbar is-transparent has-text-centered"
+        className={`subnavbar is-transparent has-text-${textPosition}`}
         role="navigation"
         aria-label="main-navigation"
       >
@@ -54,24 +88,15 @@ const SubNavbar = class extends React.Component {
             id="navMenu"
             className={`subnavbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="subnavbar-start has-text-centered">
-              <AnchorLink className="navbar-item" href="#engineering">
-                Project Engineering
-              </AnchorLink>
-              <AnchorLink className="navbar-item" href="#commissioning">
-                Commissioning & Performance Testing
-              </AnchorLink>
-              <AnchorLink className="navbar-item" href="#development">
-                Development
-              </AnchorLink>
-              <AnchorLink className="navbar-item" href="#assets-data">
-                Asset Management & Data Analytics
-              </AnchorLink>
-              <AnchorLink className="navbar-item" href='#qa'>
-                Engineering & QA
-              </AnchorLink>
-            </div>
-            <div className="subnavbar-end has-text-centered">
+            <div className="subnavbar-start">
+              <Link className={`subnav-link ${indexActive}`} to="/services">
+                Services
+              </Link>
+              <span className="navbar-item"> | </span>
+              { this.displayAnchorLinks() }
+              <Link className={`subnav-link ${astmActive}`} to="/services/astm-capacity-testing">
+                ASTM Capacity Testing
+              </Link>
             </div>
           </div>
         </div>

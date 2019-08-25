@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/sec_logo.png'
+import NavLink from './NavLink'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -31,7 +32,7 @@ const Navbar = class extends React.Component {
     )
   }
 
-  render() {
+render() {
     return (
       <nav
         className="navbar is-transparent"
@@ -62,18 +63,18 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-start has-text-centered"></div>
             <div className="navbar-end has-text-left">
-              <Link className="navbar-item" to="/services">
+              <NavLink to="/services">
                 Services
-              </Link>
-              <Link className="navbar-item" to="/projects">
+              </NavLink>
+              <NavLink to="/projects">
                 Projects
-              </Link>
-              <Link className="navbar-item" to="/about">
+              </NavLink>
+              <NavLink to="/about">
                 Company
-              </Link>
-              <Link className="navbar-item" to="/contact">
+              </NavLink>
+              <NavLink to="/contact">
                 Contact
-              </Link>
+              </NavLink>
 
             </div>
           </div>

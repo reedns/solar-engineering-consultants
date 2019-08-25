@@ -8,13 +8,19 @@ $black: #2b2523
 
 .navbar .navbar-menu
   box-shadow:none !important
+  a.active
+    color: $primary
 .subnavbar
   background-color: $primary
   .subnavbar-start
     display: inline-flex
-  a
+  a, span.navbar-item
     padding: 1rem 1rem;
     color: $white-ter
+  a.active
+    font-weight: bold
+  .anchors
+    display: inline-flex
 .content .taglist
   list-style: none
   margin-bottom: 0

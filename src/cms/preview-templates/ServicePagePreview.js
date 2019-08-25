@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { ServicePageTemplate } from '../../templates/service-page'
 
-const ServicePagePreview = ({ entry, getAsset }) => {
+const ServicePagePreview = ({ entry, getAsset, widgetFor }) => {
   return(
     <ServicePageTemplate
       title={entry.getIn(['data', 'title'])}
