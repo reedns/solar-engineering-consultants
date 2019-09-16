@@ -1,7 +1,5 @@
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Link } from 'gatsby'
-import { globalHistory } from '@reach/router';
 
 const SubNavbar = class extends React.Component {
   constructor(props) {
@@ -32,42 +30,32 @@ const SubNavbar = class extends React.Component {
     )
   }
 
-  onServicesIndex = () => {
-    return globalHistory.location.pathname === '/services'
-  }
-
   displayAnchorLinks = () => {
-    if (this.onServicesIndex()) {
-      return (
-        <div className="anchors">
-          <AnchorLink className="navbar-item" href="#engineering">
-            Project Engineering
-          </AnchorLink>
-          <AnchorLink className="navbar-item" href="#commissioning">
-            Performance Testing
-          </AnchorLink>
-          <AnchorLink className="navbar-item" href="#development">
-            Development
-          </AnchorLink>
-          <AnchorLink className="navbar-item" href="#assets-data">
-            Asset Management
-          </AnchorLink>
-          <AnchorLink className="navbar-item" href='#qa'>
-            QA
-          </AnchorLink>
-          <span className="navbar-item"> | </span>
-        </div>
-      )
-    }
+    return (
+      <div className="anchors">
+        <AnchorLink className="navbar-item" href="#engineering">
+          Project Engineering
+        </AnchorLink>
+        <AnchorLink className="navbar-item" href="#commissioning">
+          Performance Testing
+        </AnchorLink>
+        <AnchorLink className="navbar-item" href="#development">
+          Development
+        </AnchorLink>
+        <AnchorLink className="navbar-item" href="#assets-data">
+          Asset Management
+        </AnchorLink>
+        <AnchorLink className="navbar-item" href='#qa'>
+          Engineering & QA
+        </AnchorLink>
+      </div>
+    )
   }
 
   render() {
-    const textPosition = this.onServicesIndex() ? 'centered' : 'left'
-    const indexActive = this.onServicesIndex() ? 'active' : ''
-    const astmActive = this.onServicesIndex() ? '' : 'active'
     return (
       <nav
-        className={`subnavbar is-transparent has-text-${textPosition}`}
+        className={"subnavbar is-transparent has-text-centered"}
         role="navigation"
         aria-label="main-navigation"
       >
@@ -89,14 +77,7 @@ const SubNavbar = class extends React.Component {
             className={`subnavbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="subnavbar-start">
-              <Link activeClassName="active" to="/services">
-                Services
-              </Link>
-              <span className="navbar-item"> | </span>
               { this.displayAnchorLinks() }
-              <Link activeClassName="active" to="/services/astm-capacity-testing">
-                ASTM Capacity Testing
-              </Link>
             </div>
           </div>
         </div>

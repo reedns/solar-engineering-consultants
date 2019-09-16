@@ -17,8 +17,6 @@ $black: #2b2523
   a, span.navbar-item
     padding: 1rem 1rem;
     color: $white-ter
-  a.active
-    font-weight: bold
   .anchors
     display: inline-flex
 .content .taglist
@@ -145,8 +143,21 @@ $menu-label-color: $white-ter
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
 
+.tabs
+  margin: 0 !important
+  padding: 0;
+  ul
+    margin: 0 !important
+    li + li
+      margin: 0
+
+
 // bulma overrides
-$section-padding: 2rem 1.5rem
+$section-padding: 1.5rem 1.5rem
+$tabs-link-active-border-bottom-color: darken($primary, 5%)
+$tabs-link-active-color: $primary
+$tabs-border-bottom-width: 2px
+$tabs-border-bottom-color: transparent
 
 @import "~bulma"
 

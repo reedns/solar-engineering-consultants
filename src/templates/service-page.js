@@ -1,12 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import SubNavbar from '../components/SubNavbar'
+import { globalHistory } from '@reach/router';
+
+const onSalesIndex = () => {
+  return globalHistory.location.pathname === '/services'
+}
+
+const displaySubNavbar = () => {
+  if (onSalesIndex()) {
+    return <SubNavbar />
+  }
+}
 
 export const ServicePageTemplate = ({ title, heading, content, image, contentComponent }) => {
   const PageContent = contentComponent || Content
+  const indexActive = onSalesIndex() ? 'is-active' : null
+  const astmActive = onSalesIndex() ? null : 'is-active'
 
   return (
     <div className="content">
@@ -33,7 +46,21 @@ export const ServicePageTemplate = ({ title, heading, content, image, contentCom
           {title}
         </h1>
       </div>
-      <SubNavbar />
+      <div className="tabs is-centered">
+        <ul>
+          <li className={ indexActive }>
+            <Link to="/services">
+              Overview
+            </Link>
+          </li>
+          <li className={ astmActive }>
+            <Link to="/services/astm-capacity-testing">
+              ASTM Capacity Testing
+            </Link>
+          </li>
+        </ul>
+      </div>
+      { displaySubNavbar() }
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
