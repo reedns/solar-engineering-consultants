@@ -45,6 +45,7 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
                     src="/img/profile pic.png"
                   >
                   </img>
+                  <p>Caleb Saunders</p>
                 </div>
               </div>
             </div>
