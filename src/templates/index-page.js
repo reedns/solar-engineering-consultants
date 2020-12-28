@@ -141,7 +141,6 @@ export const pageQuery = graphql`
         subheading
         mainpitch {
           title
-          description
         }
         info {
           lead

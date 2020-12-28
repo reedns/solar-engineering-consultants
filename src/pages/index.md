@@ -6,18 +6,16 @@ heading: Solar Engineering Consultants
 subheading: Engineering, Development & Commissioning Expertise
 mainpitch:
   title: Dedicated to providing Expert Quality, Efficient Solutions for your Project to help reduce LCOE and OpEx
-  description: ''
 info:
   lead: >
-    Solar Engineering Consultants (SEC) specializes in helping owners, developers, EPCs, and financiers
-    in solar energy and storage projects from concept to project completion.
+    Solar Engineering Consultants (SEC) specializes in helping owners, developers, EPC’s, investors, and
+    owners with renewable energy and storage projects from concept to project completion.
   content: >
-    SEC is dedicated to providing
-    exceptional expertise, performance, responsiveness, and quality to our clients. We are a network of
-    engineers and consultants who have the expertise to help projects through the early stages of siting
-    and interconnection when risk is highest, through the permitting, engineering, construction, commissioning,
-    and financial close-out phases. Once projects are operational, we have the expertise to help troubleshoot
-    issues and optimize operations for utility scale and C&I projects or portfolios.
+    We are a network of engineers and consultants who have the expertise to help you through the early stages of
+    siting and interconnection when project risk is highest, through the permitting, engineering, construction,
+    commissioning, financial close, and operations phases of your project. We have expertise throughout the
+    utility scale and C&I market segments, working with a wide range of renewable energy and energy
+    storage technologies.
   nextLead: >
     SEC is dedicated to providing quality, best-in-class solutions and focused on providing value to our client's
     projects by leveraging our depth of experience to provide a detailed or streamlined focus as appropriate,
