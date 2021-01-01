@@ -15,9 +15,15 @@ export const ProjectPageTemplate = ({
     <div
       className="full-width-image-container margin-top-0"
       style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
+        backgroundImage: `
+          linear-gradient(
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url(${
+            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          })
+        `,
         backgroundPosition: `bottom right`,
         backgroundAttachment: `fixed`,
       }}

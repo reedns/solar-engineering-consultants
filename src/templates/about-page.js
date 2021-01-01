@@ -21,8 +21,9 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
               !!image.childImageSharp ? image.childImageSharp.fluid.src : image
             })
           `,
-          backgroundPosition: 'bottom left',
+          backgroundPosition: 'bottom right',
           backgroundAttachment: 'fixed',
+          backgroundSize: 'initial'
         }}
       >
         <h2

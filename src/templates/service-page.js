@@ -3,17 +3,10 @@ import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import SubNavbar from '../components/SubNavbar'
 import { globalHistory } from '@reach/router';
 
 const onSalesIndex = () => {
   return globalHistory.location.pathname === '/services'
-}
-
-const displaySubNavbar = () => {
-  if (onSalesIndex()) {
-    return <SubNavbar />
-  }
 }
 
 export const ServicePageTemplate = ({ title, heading, content, image, contentComponent }) => {
@@ -46,26 +39,25 @@ export const ServicePageTemplate = ({ title, heading, content, image, contentCom
           {title}
         </h1>
       </div>
-      <div className="tabs is-centered">
-        <ul>
-          <li className={ indexActive }>
-            <Link to="/services">
-              Overview
-            </Link>
-          </li>
-          <li className={ astmActive }>
-            <Link to="/services/astm-capacity-testing">
-              ASTM Capacity Testing
-            </Link>
-          </li>
-        </ul>
-      </div>
-      { displaySubNavbar() }
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
+                <div className="tabs">
+                  <ul>
+                    <li className={ indexActive }>
+                      <Link to="/services">
+                        Overview
+                      </Link>
+                    </li>
+                    <li className={ astmActive }>
+                      <Link to="/services/astm-capacity-testing">
+                        ASTM Capacity Testing
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
                 <h2 className="has-text-weight-semibold is-size-2">
                   {heading}
                 </h2>
