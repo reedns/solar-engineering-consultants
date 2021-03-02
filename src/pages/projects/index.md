@@ -121,7 +121,7 @@ intro:
         Managed solar + storage integration, technology analysis, energy & financial modeling, GIS & civil site preliminary analysis,
         Interconnection Application, developed layout and 1-line diagram, preliminary SCADA integration: BMS, ESS + PV inverters
     - image: /img/image11.png
-      title: 125 MW PV+10 MVA ESS, greenfield dev & engineering, AZ
+      title: Greenfield Dev & Engineering - 125 MW PV+10 MVA ESS, AZ
       utility: APS
       lead: "Greenfield development & engineering:"
       power: 125 MW
@@ -129,7 +129,7 @@ intro:
         Site layout & GIS analysis, equipment selection, PVsyst energy model, Interconnection options evaluation and support for 230 kV
         interconnection request
     - image: /img/image10.png
-      title: 200 MW PV+20 MVA ESS, owner’s engineer services, Southern CA
+      title: Owner’s Engineer Services, Southern CA - 200 MW PV+20 MVA ESS
       utility: SCE
       lead: "Greenfield development & owner’s engineer services:"
       power: 200 MW
@@ -145,14 +145,14 @@ intro:
       text: >
         Site layout & GIS analysis, technology selection, PVsyst energy model, Interconnection options evaluation and support for 230 kV interconnection request
     - image: /img/image14.png
-      title: 160 MW PV, greenfield development services, LA
+      title: Greenfield Development Services - 160 MW PV, LA
       utility: PC Electric
       lead: "Greenfield development & engineering:"
       power: 160 MW
       text: >
         Site layout, GIS review, equipment selection, PVsyst energy model
     - image: /img/image17.png
-      title: 1 MW canopy project, commissioning & performance certification
+      title: Commissioning & Performance Certification - 1 MW canopy project
       utility: PG&E
       lead: "Independent commissioning oversight & report:"
       power: 1 MW
@@ -160,7 +160,7 @@ intro:
         Created commissioning plan & forms for client, review of all I-V curve trace, Voc, IRT, operational current & commissioning data, review
         of thermographic images, performance verification using Expected Power test, final commissioning report & certification
     - image: /img/image18.png
-      title: 3 MW canopy & rooftop DG portfolio, energy model evaluation
+      title: Energy Model Evaluation - 3 MW canopy & rooftop DG portfolio
       utility: SDG&E
       lead: "Independent review of energy model:"
       power: 3 MW
