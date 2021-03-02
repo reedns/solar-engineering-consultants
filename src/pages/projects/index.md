@@ -17,48 +17,109 @@ description: >
 intro:
   blurbs:
     - image: /img/1.jpg
-      title: 600 MW Performance Testing – Lancaster & Cantil Portfolios
+      title: Capacity & Performance Testing Services – 2 GW+ nationwide
       utility: SCE & LADWP
-      lead: "ASTM E2848 based Capacity Test administration:"
-      power: 600 MW
+      lead: "ASTM E2848 & IEC 61724 based Capacity & Performance Test administration:"
+      power: 2 GW
       text: >
-        600 MW+ portfolio of PV projects in high central desert region, detailed troubleshooting
-        analysis of operational data to ensure optimal site operation for testing, regression analysis
-        of data, collaboration with EPC, SCADA provider, and owner throughout test period, certified
-        performance with progress and final test reports for owners, bank engineers, and utility
-    - image: /img/55MW-PV-QF-1-axis-Kuna-ID.png
-      title: 55 MW PV QF, design, engineering mgmt, 138 kV Interconnection
-      utility: IPCo
-      lead: "Managed engineering & construction permitting:"
-      power: 55 MW
-      text: >
-        Managed LV, MV & substation Electrical & Civil engineering, Interconnection & SCADA design coordination with
-        utility and stakeholders, value engineering for substation and PV plant, pier length study for highly contoured site
+        Dozens of projects across the U.S. from 5 MW to 230 MW in scale, incl bi-facial.  Regression analysis performance comparison of test vs modeled data.
+        Services include performance analytics to troubleshoot plant underperformance, updates throughout the test process, collaboration with EPC, SCADA provider,
+        and owner throughout test period, certified performance with progress and final test reports for owners, bank engineers, and utilities.
     - image: /img/image9.jpg
-      title: 20 MW PV RAM, project commissioning management Fresno, CA
+      title: Project Commissioning Services – 24 MW PV SAT, Fresno, CA
       utility: PG&E
       lead: "Project Commissioning Management: "
-      power: 20 MW
+      power: 24 MW
       text: >
-        Managed, tracked, and drove commissioning and start-up process, managed and scheduled stakeholders and resources, schedules,
-        and issues.  Managed utility, capacity, and performance testing.  Managed close out for mechanical and substantial completion.
+        Managed, tracked, and drove commissioning and start-up process, managed and scheduled resources, stakeholders, schedules, and plant performance issues.
+        Final QA audits.  Managed utility, performance, and reactive power tests.  Commissioning & certification reports.
+    - image: /img/image6.jpg
+      title: Project Commissioning Services – 230 MW PV SAT, Odessa, TX
+      utility: Placeholder
+      lead: "Project Commissioning Management:"
+      text: >
+        Managed, tracked and drove commissioning and start-up process, managed and scheduled resources, stakeholders, schedules, and plant performance issues.
+        Final QA audits.  Managed utility, performance, and reactive power tests.  Commissioning & certification reports.
+    - image: /img/image5.png
+      title: Owner’s Representative Services – Big box retail 7 locations, 4 MW, CA
+      utility: Placeholder
+      lead: "Contract Construction Management/Owner’s Rep:"
+      power: 4 MW
+      text: >
+        Concurrent construction at 7 locations in Northern & Southern CA.  2 separate SEC resources representing the owner, EPC oversight,
+        schedule tracking, commissioning, local site host.  Portfolio management through Procore, QA/QC inspections throughout.
     - image: /img/am portfolio.png
-      title: 800 MW PV Asset Management, performance eval & modeling
+      title: Asset Management Services - Performance eval & modeling 875 MW
       utility: Numerous, national portfolio
       lead: "Helped client bidding O&M services define portfolio performance and quantify risk:"
-      power: 800 MW
+      power: 875 MW
       text: >
-        Evaluated 450+ projects on individual and portfolio level analysis, NREL modeled projects to quantify
-        potential LD risk with limited resource data and portfolio targets provided very late in process, NSRDB
-        vs. client TMY analysis
+        Evaluated 475+ projects on individual and portfolio level analysis, python automated process to SAM model each project in the portfolio
+        to quantify potential Liquidated Damages risk of portfolio with limited resource data and portfolio targets provided very late in process,
+        NSRDB vs. portfolio owner TMY analysis, utility & DG mix
+    - image: /img/image7.png
+      title: Project Commissioning Services - 2 MW DG portfolio, San Diego, CA
+      utility: Placeholder
+      lead: "Independent commissioning oversight:"
+      power: 2 MW
+      text: >
+        3rd party QA/QC inspections, I-V curve trace, megger test all power circuits, operational current tests, performance verification using Expected Power test,
+        final commissioning report & certification
+    - image: /img/image12.png
+      title: Owner’s Services – Acquisition due diligence, 10 MW PV SAT, CA
+      utility: SCE
+      lead: "Project acquisition due diligence & fatal flaw analysis: "
+      power: 10 MW
+      text: >
+        DD investment report, review of Interconnection Agreement, entitlements, OOC, ALTA & title, geotech, PPA review, prelim engineering review, comparison PVsyst model,
+        financial modeling, EPC budget detailed review, schedule review & risk analysis
+    - image: /img/image9.png
+      title: Engineering Services - EEOR, 12 school DSA canopy portfolio 2 MW
+      utility: Placeholder
+      lead: "Electrical Engineer of Record for 12 school CA portfolio: "
+      power: 2 MW
+      text: >
+        Complete electrical engineering for DSA projects, coordination with Structural and Architectural Engineers, AC & MV collection design, DC design, optimization,
+        and calculations, AF & short circuit study, interconnection site visits, DSA permit support
     - image: /img/image8.png
-      title: 60 MW PV ATC fatal flaw study & CAISO Interconnection Request
+      title: Development Services - ATC fatal flaw study & CAISO IR, 60 MW
       utility: PG&E, CAISO
       lead: "ATC fatal flaw analysis, greenfield siting, and CAISO Interconnection Request:"
       power: 60 MW
       text: >
         PSLF modeled multiple present and future basecase scenarios to determine ATC, greenfield multi-parcel heavily easement constrained
-        layout, 1-line diagram, PSLF dynamic modeling, completed CAISO IR documents
+        layout, 1-line diagram, PSLF dynamic modeling, completed CAISO IR documents for submission
+    - image: /img/image16.png
+      title: Owner’s Services – development consulting, 15 MW DG portfolio, CA
+      utility: PG&E municipal
+      lead: "Owner consulting services:"
+      power: 15 MW
+      text: >
+        Developed comprehensive project mgmt. & finance process, documents. Siting, technical & engineering oversight, rate tariff & project
+        energy analysis, contract & SOW review, real estate & project risk review, conducted EPC RFP, project & portfolio budgeting and pro forma
+    - image: /img/55MW-PV-QF-1-axis-Kuna-ID.png
+      title: Engineering Services – Design management, 55 MW SAT, 138 kV, ID
+      utility: IPCo
+      lead: "Managed engineering through permitting:"
+      power: 55 MW
+      text: >
+        Managed LV, MV & substation Electrical & Civil engineering, Interconnection & SCADA design coordination with utility and stakeholders,
+        value engineering for substation and PV plant, pier length study for highly contoured site
+    - image: /img/image13.png
+      title: Owner’s Services – QA/QC Inspections DG portfolio, 3 MW, CA
+      utility: SDG&E
+      lead: "Owner’s representative engineering review, QA inspections, Commissioning: "
+      power: 3 MW
+      text: >
+        Engineered drawing review, QA site inspections & reports throughout construction, commissioning oversight & review of punchlists, data
+    - image: /img/image15.png
+      title: Owner’s Services – Interconnection engr. 4 MW PV+12 MVA ESS, CA
+      utility: SCE
+      lead: "Greenfield development & engineering services:"
+      power: 4 MW
+      text: >
+        Managed solar + storage integration, technology analysis, energy & financial modeling, GIS & civil site preliminary analysis,
+        Interconnection Application, developed layout and 1-line diagram, preliminary SCADA integration: BMS, ESS + PV inverters
     - image: /img/image11.png
       title: 125 MW PV+10 MVA ESS, greenfield dev & engineering, AZ
       utility: APS
@@ -76,6 +137,13 @@ intro:
         Development and engineering consultations, preliminary layouts in highly constrained site, GIS & civil site/slope
         analysis, energy modeling, review of CAISO interconnection options, created project development schedule, technology
         options analysis, qualified engineers and consultants to be hired, SOW review & comments, created DOR matrix
+    - image: /img/image21.png
+      title: Development Engineering Services - 350 MW PV, TX
+      utility: Placeholder
+      lead: "Greenfield development & engineering:"
+      power: 350 MW
+      text: >
+        Site layout & GIS analysis, technology selection, PVsyst energy model, Interconnection options evaluation and support for 230 kV interconnection request
     - image: /img/image14.png
       title: 160 MW PV, greenfield development services, LA
       utility: PC Electric
@@ -83,37 +151,6 @@ intro:
       power: 160 MW
       text: >
         Site layout, GIS review, equipment selection, PVsyst energy model
-    - image: /img/image12.png
-      title: 10 MW PV CREST aggregation, project acquisition due diligence
-      utility: SCE
-      lead: "Project acquisition due diligence & fatal flaw analysis: "
-      power: 10 MW
-      text: >
-        DD investment report, review of Interconnection Agreement, entitlements, OOC, ALTA & title, geotech, PPA review, prelim
-        engineering review, comparison PVsyst model, comparison pro forma, EPC budget review, schedule review & risk analysis
-    - image: /img/image13.png
-      title: 3 MW canopy & rooftop DG portfolio, owner’s rep & QA inspector
-      utility: SDG&E
-      lead: "Owner’s representative engineering review, QA inspections, Commissioning: "
-      power: 3 MW
-      text: >
-        Engineered drawing review, QA site inspections & reports throughout construction, commissioning oversight & review of punchlists, data
-    - image: /img/image15.png
-      title: 4 MW PV+12 MVA ESS, greenfield dev & engineering, Blythe, CA
-      utility: SCE
-      lead: "Greenfield development & engineering services:"
-      power: 4 MW
-      text: >
-        Managed solar + storage integration, technology analysis, energy & financial modeling, GIS & civil site preliminary analysis,
-        Interconnection Application, developed layout and 1-line diagram, preliminary SCADA integration: BMS, ESS + PV inverters
-    - image: /img/image16.png
-      title: 15 MW canopy & rooftop DG portfolio, project owner consultant
-      utility: PG&E municipal
-      lead: "Owner consulting services:"
-      power: 15 MW
-      text: >
-        Developed comprehensive project mgmt. & finance process, documents. Siting, technical & engineering oversight, rate tariff & project
-        energy analysis, contract & SOW review, real estate & project risk review, conducted EPC RFP, project & portfolio budgeting and pro forma
     - image: /img/image17.png
       title: 1 MW canopy project, commissioning & performance certification
       utility: PG&E
@@ -132,4 +169,3 @@ intro:
         losses to engineered plans
 
 ---
-

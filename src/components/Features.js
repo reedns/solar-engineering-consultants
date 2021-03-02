@@ -29,12 +29,6 @@ const FeatureGrid = ({ gridItems }) => (
               </div>
               <div className="column is-two-thirds">
                 <h4 style={titleStyle}>{item.title} </h4>
-                <div>
-                  <FontAwesomeIcon icon={faLightbulb} style={iconStyle} />
-                  <span style={iconTextStyle}>{item.utility}</span>
-                  <FontAwesomeIcon icon={faBolt} style={{ color: '#009e87' }} />
-                  <span style={iconTextStyle}>{item.power}</span>
-                </div>
                 <p style={descriptionStyle}>
                   <strong>{item.lead} </strong>
                   {item.text}
