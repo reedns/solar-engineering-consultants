@@ -9,7 +9,7 @@ mainpitch:
 info:
   lead: >
     Solar Engineering Consultants (SEC) specializes in helping owners, developers, EPC’s, investors, and
-    owners with renewable energy and storage projects from concept to project completion.
+    asset managers with renewable energy and storage projects from concept to project completion.
   content: >
     We are a network of engineers and consultants who have the expertise to help you through the early stages of
     siting and interconnection when project risk is highest, through the permitting, engineering, construction,
