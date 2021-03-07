@@ -6,7 +6,7 @@ const Footer = class extends React.Component {
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered has-background-black has-text-white-ter">
           <p>
-            &#169; 2019 Solar Engineering Consultants
+            &#169; 2021 Solar Engineering Consultants
           </p>
           <p>
             1855 First Ave, Suite 103,
