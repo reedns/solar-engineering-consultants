@@ -102,7 +102,7 @@ export const servicePageQuery = graphql`
         heading
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 90) {
+            fluid(maxWidth: 2048, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }
