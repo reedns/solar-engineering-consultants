@@ -1,7 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLightbulb, faBolt } from '@fortawesome/free-solid-svg-icons'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const iconStyle = { color: '#009e87' }
