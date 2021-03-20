@@ -8,7 +8,12 @@ const Navbar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
+      servicesActive: false
     }
+  }
+
+  componentDidMount() {
+    this.setState({ servicesActive: window.location.pathname.split('/').includes('services') })
   }
 
   toggleHamburger = () => {
@@ -32,7 +37,6 @@ const Navbar = class extends React.Component {
   }
 
 render() {
-    const servicesActive = window.location.pathname.split('/').includes('services') ? 'active' : ''
     return (
       <nav
         className="navbar is-transparent"
@@ -65,7 +69,7 @@ render() {
             <div className="navbar-end has-text-left">
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <a className={`navbar-link ${servicesActive}`} data-active-path='services'>
+                <a className={`navbar-link ${this.state.servicesActive ? 'active' : ''}`} data-active-path='services'>
                   Services
                 </a>
 
