@@ -3,16 +3,9 @@ import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import { globalHistory } from '@reach/router';
-
-const onSalesIndex = () => {
-  return globalHistory.location.pathname === '/services'
-}
 
 export const ServicePageTemplate = ({ title, heading, content, image, contentComponent }) => {
   const PageContent = contentComponent || Content
-  const indexActive = onSalesIndex() ? 'is-active' : null
-  const astmActive = onSalesIndex() ? null : 'is-active'
 
   return (
     <div className="content">
@@ -46,14 +39,49 @@ export const ServicePageTemplate = ({ title, heading, content, image, contentCom
               <div className="section">
                 <div className="tabs">
                   <ul>
-                    <li className={ indexActive }>
-                      <Link to="/services">
+                    <li>
+                      <Link activeClassName="active" to="/services">
                         Overview
                       </Link>
                     </li>
-                    <li className={ astmActive }>
-                      <Link to="/services/astm-capacity-testing">
+                    <li>
+                      <Link activeClassName="active" to="/services/astm-capacity-testing">
                         ASTM Capacity Testing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link activeClassName="active" to="/services/project-engineering">
+                        Project Engineering
+                      </Link>
+                    </li>
+                    <li>
+                      <Link activeClassName="active" to="/services/comissioning-performance-testing">
+                        Comissioning & Performance Testing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link activeClassName="active" to="/services/development">
+                        Development
+                      </Link>
+                    </li>
+                    <li>
+                      <Link activeClassName="active" to="/services/asset-management">
+                        Asset Management & Data Analytics
+                      </Link>
+                    </li>
+                    <li>
+                      <Link activeClassName="active" to="/services/independent-engineering">
+                        Independent Engineering
+                      </Link>
+                    </li>
+                    <li>
+                      <Link activeClassName="active" to="/services/due-dilligence">
+                        Due Dilligence
+                      </Link>
+                    </li>
+                    <li>
+                      <Link activeClassName="active" to="/services/blockchain-edge-computing">
+                        Blockchain & Edge Computing
                       </Link>
                     </li>
                   </ul>

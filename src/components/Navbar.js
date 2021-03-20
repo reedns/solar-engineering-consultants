@@ -62,9 +62,19 @@ render() {
           >
             <div className="navbar-start has-text-centered"></div>
             <div className="navbar-end has-text-left">
-              <Link partiallyActive={true} activeClassName="active" className="navbar-item" to="/services">
-                Services
-              </Link>
+
+              <div className="navbar-item has-dropdown is-hoverable">
+                <Link partiallyActive={true} activeClassName="active" className="navbar-link">
+                  Services
+                </Link>
+
+                <div className="navbar-dropdown">
+                  <Link className="navbar-item" to="/services/astm-capacity-testing">
+                    ASTM Capacity Testing
+                  </Link>
+                </div>
+              </div>
+
               <Link activeClassName="active" className="navbar-item" to="/projects">
                 Projects
               </Link>
