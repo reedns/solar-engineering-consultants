@@ -8,8 +8,11 @@ $black: #2b2523
 
 .navbar .navbar-menu
   box-shadow:none !important
-  a.active
+  a.active, a:hover
     color: $primary
+  .navbar-link:not(.is-arrowless)::after
+    border-color: $primary
+
 .subnavbar
   background-color: $primary
   .subnavbar-start

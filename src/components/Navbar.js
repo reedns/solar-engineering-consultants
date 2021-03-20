@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/sec_logo.png'
+import logo from '../img/sec-logo-drk-blue-green.jpg'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -32,6 +32,7 @@ const Navbar = class extends React.Component {
   }
 
 render() {
+    const servicesActive = window.location.pathname.split('/').includes('services') ? 'active' : ''
     return (
       <nav
         className="navbar is-transparent"
@@ -64,36 +65,36 @@ render() {
             <div className="navbar-end has-text-left">
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <Link partiallyActive={true} activeClassName="active" className="navbar-link">
+                <a className={`navbar-link ${servicesActive}`} data-active-path='services'>
                   Services
-                </Link>
+                </a>
 
                 <div className="navbar-dropdown">
-                  <Link className="navbar-item" to="/services/astm-capacity-testing">
+                  <Link activeClassName="active" className="navbar-item" to="/services/astm-capacity-testing">
                     ASTM Capacity Testing
                   </Link>
-                  <Link className="navbar-item" to="/services/project-engineering">
+                  <Link activeClassName="active" className="navbar-item" to="/services/project-engineering">
                     Project Engineering
                   </Link>
-                  <Link className="navbar-item" to="/services/commissioning">
+                  <Link activeClassName="active" className="navbar-item" to="/services/commissioning">
                     Commissioning
                   </Link>
-                  <Link className="navbar-item" to="/services/development">
+                  <Link activeClassName="active" className="navbar-item" to="/services/development">
                     Development
                   </Link>
-                  <Link className="navbar-item" to="/services/asset-management">
+                  <Link activeClassName="active" className="navbar-item" to="/services/asset-management">
                     Asset Management & Data Analytics
                   </Link>
-                  <Link className="navbar-item" to="/services/independent-engineering">
+                  <Link activeClassName="active" className="navbar-item" to="/services/independent-engineering">
                     Independent Engineering & Consultation
                   </Link>
-                  <Link className="navbar-item" to="/services/due-dilligence">
+                  <Link activeClassName="active" className="navbar-item" to="/services/due-dilligence">
                     Due Dilligence
                   </Link>
-                  <Link className="navbar-item" to="/services/quality-assurance">
+                  <Link activeClassName="active" className="navbar-item" to="/services/quality-assurance">
                     Owner’s Representative QA/QC & CM
                   </Link>
-                  <Link className="navbar-item" to="/services/microgrid">
+                  <Link activeClassName="active" className="navbar-item" to="/services/microgrid">
                     Microgrid & Edge Computing
                   </Link>
                 </div>
