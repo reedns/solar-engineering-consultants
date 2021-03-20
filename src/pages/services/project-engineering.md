@@ -7,11 +7,15 @@ heading: Project Engineering
 ---
 Solar Engineering consultants provides detailed project engineering services for commercial, C&I, and utility solar and storage projects:
 
-* DC, AC, MV & Substation/HV electrical engineering for PV and storage projects
+* DC, AC, MV & HV electrical engineering for PV and storage projects
 * SCADA, EMS, and BMS coordination
-* Electrical design, site layout, and equipment optimization
-* Tracker spacing and block geometry optimization
-* PVsyst and energy model creation, updates
-* Arc flash and short circuit studies
-* Equipment specification
+* Site layout and technology selection
+* Project DLR and site geometry optimization
+* Electrical design, conductor specification & electrical calculations
+* PVsyst and energy model generation, updates
+* Arc flash and short circuit studies SKM
+* SKM, ETAP modeling, thermal, grounding, and coordination studies
+* Grounding design & study
+* Performance verification
 * Inter-discipline coordination with Structural, Civil, and Architectural Engineers
+* Photometric plan for canopies

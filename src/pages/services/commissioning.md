@@ -3,37 +3,36 @@ templateKey: service-page
 path: /services
 title: Services
 image: /img/solar-cell.jpg
-heading: Commissioning & Performance Testing
+heading: Commissioning
 ---
 Solar Engineering Consultants will provide thorough independent commissioning services for
 your project:
 
-* Complete commissioning management services
-* Onsite commissioning oversight
 * ASTM E2848 Capacity/Performance Testing administration
-* Commissioning plan development and review
+* Monitoring & Capacity evaluation to IEC 61724-1 & IEC 61724-2 standards
+* Onsite Commissioning oversight
+* Commissioning oversight and plan development, review (desktop)
 * Engineered drawing review pre- and post-construction
-* PVsyst or energy model updates
 * Onsite QA pre-startup inspections:
   * Equipment installation conforms to engineered & manufacturer specification
   * Conductors sized according to plans
-  * Visual inspections of installed equipment, spot check torqueing
-  * Terminations
+  * Visual inspections of installed equipment, spot check torquing, terminations
+  * Module, tracker, racking inspections
   * Wire management
   * Ground continuity
   * Foundation & trench inspections
   * Redline drawing review confirmation
   * Special inspection report review
 * Commissioning & Functional Testing oversight:
+  * Vendor management and equipment startup monitoring
   * PV string I-V curve tracing
   * Voc, Isc and megger testing
-  * Operational current test
-  * Onsite capacity test
-  * Thermographic imaging analysis of modules and equipment
-  * Equipment startup monitoring
+  * Operational current testing
+  * Performance analytics
   * Utility witness testing oversight & monitoring
   * Communications and SCADA commissioning
-* Operational or start-up troubleshooting
+  * Thermographic imaging analysis of modules and equipment
+* Operational troubleshooting and performance analytics
 * Review of all Commissioning test results
 * Capacity & Availability Test reports
 * Commissioning Test reports

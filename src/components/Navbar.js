@@ -72,6 +72,30 @@ render() {
                   <Link className="navbar-item" to="/services/astm-capacity-testing">
                     ASTM Capacity Testing
                   </Link>
+                  <Link className="navbar-item" to="/services/project-engineering">
+                    Project Engineering
+                  </Link>
+                  <Link className="navbar-item" to="/services/commissioning">
+                    Commissioning
+                  </Link>
+                  <Link className="navbar-item" to="/services/development">
+                    Development
+                  </Link>
+                  <Link className="navbar-item" to="/services/asset-management">
+                    Asset Management & Data Analytics
+                  </Link>
+                  <Link className="navbar-item" to="/services/independent-engineering">
+                    Independent Engineering & Consultation
+                  </Link>
+                  <Link className="navbar-item" to="/services/due-dilligence">
+                    Due Dilligence
+                  </Link>
+                  <Link className="navbar-item" to="/services/quality-assurance">
+                    Owner’s Representative QA/QC & CM
+                  </Link>
+                  <Link className="navbar-item" to="/services/microgrid">
+                    Microgrid & Edge Computing
+                  </Link>
                 </div>
               </div>
 

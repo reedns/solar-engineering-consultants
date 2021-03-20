@@ -37,55 +37,6 @@ export const ServicePageTemplate = ({ title, heading, content, image, contentCom
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
-                <div className="tabs">
-                  <ul>
-                    <li>
-                      <Link activeClassName="active" to="/services">
-                        Overview
-                      </Link>
-                    </li>
-                    <li>
-                      <Link activeClassName="active" to="/services/astm-capacity-testing">
-                        ASTM Capacity Testing
-                      </Link>
-                    </li>
-                    <li>
-                      <Link activeClassName="active" to="/services/project-engineering">
-                        Project Engineering
-                      </Link>
-                    </li>
-                    <li>
-                      <Link activeClassName="active" to="/services/comissioning-performance-testing">
-                        Comissioning & Performance Testing
-                      </Link>
-                    </li>
-                    <li>
-                      <Link activeClassName="active" to="/services/development">
-                        Development
-                      </Link>
-                    </li>
-                    <li>
-                      <Link activeClassName="active" to="/services/asset-management">
-                        Asset Management & Data Analytics
-                      </Link>
-                    </li>
-                    <li>
-                      <Link activeClassName="active" to="/services/independent-engineering">
-                        Independent Engineering
-                      </Link>
-                    </li>
-                    <li>
-                      <Link activeClassName="active" to="/services/due-dilligence">
-                        Due Dilligence
-                      </Link>
-                    </li>
-                    <li>
-                      <Link activeClassName="active" to="/services/blockchain-edge-computing">
-                        Blockchain & Edge Computing
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
                 <h2 className="has-text-weight-semibold is-size-2">
                   {heading}
                 </h2>

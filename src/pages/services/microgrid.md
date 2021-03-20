@@ -3,7 +3,7 @@ templateKey: service-page
 path: /services
 title: Services
 image: /img/solar-cell.jpg
-heading: Blockchain & Edge Computing Host
+heading: Microgrid & Edge Computing
 ---
 
 Solar Engineering Consultants works with blockchain and edge computing host service providers by offering services which include:
@@ -17,4 +17,4 @@ Solar Engineering Consultants works with blockchain and edge computing host serv
 * DC coupled and AC coupled power stack solutions
 * Custom design solutions from generation facility through server rack
 * Independent engineering & QA services
-* Owners representative services
+* Owner's representative services
