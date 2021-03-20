@@ -13,7 +13,7 @@ info:
   content: >
     We are a network of engineers and consultants who have the expertise to help you through the early stages of
     siting and interconnection when project risk is highest, through the permitting, engineering, construction,
-    commissioning, financial close, and operations phases of your project. We have expertise throughout the
+    commissioning, financial close, and operations phases as the project progresses. We have expertise throughout the
     utility scale and C&I market segments, working with a wide range of renewable energy and energy
     storage technologies.
   nextLead: >
@@ -25,6 +25,8 @@ info:
     throughout the lifecycle, dedicating our efforts to mitigating risk and helping to ensure projects stay within budget
     and on schedule. Our purpose is to solve problems and do our part to help our clients reduce LCOE and OpEx for their projects.
     We welcome the opportunity to work with you on projects large or small.
+  closing: >
+    Please browse the website to find out more about SEC or contact us to discuss how we can help your project or provide more information.
 intro:
   blurbs:
     - image:

@@ -75,6 +75,9 @@ export const IndexPageTemplate = ({
                       <strong>{info.nextLead}</strong>
                       {info.nextContent}
                     </p>
+                    <p>
+                      {info.closing}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -148,6 +151,7 @@ export const pageQuery = graphql`
           content
           nextLead
           nextContent
+          closing
         }
         intro {
           blurbs {
