@@ -14,8 +14,8 @@ Understanding the ASTM E2848 or IEC 61724 standards and the Performance Test pro
 
 ![Target & Measured Capacity vs Irradiance](/img/astm-capacity-testing.jpg)
 
-To find out more about ASTM E2848 Capacity Testing, please review the links below or reach out
-to us directly at: [caleb@solarengineeringconsultants.com](mailto: caleb@solarengineeringconsultants.com)
+To find out more about ASTM E2848 or IEC 61724 Testing, please review the links below or
+[contact us](mailto: caleb@solarengineeringconsultants.com).
 
 ### Additional Links
 
