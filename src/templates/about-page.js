@@ -5,7 +5,14 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import SimpleSlider  from '../components/SimpleSlider.js'
 
-export const AboutPageTemplate = ({ title, content, image, image2, image3, contentComponent }) => {
+export const AboutPageTemplate = ({
+  title,
+  content,
+  image,
+  image2,
+  image3,
+  contentComponent
+}) => {
   const PageContent = contentComponent || Content
 
   return (

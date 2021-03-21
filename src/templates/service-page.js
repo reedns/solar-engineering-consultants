@@ -5,7 +5,14 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import SimpleSlider  from '../components/SimpleSlider.js'
 
-export const ServicePageTemplate = ({ title, heading, content, image, image2, image3, contentComponent, bodyImage, bodyImageAlt }) => {
+export const ServicePageTemplate = ({
+  title,
+  heading,
+  content, image,
+  image2,
+  image3,
+  contentComponent,
+}) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -60,7 +67,6 @@ export const servicePageQuery = graphql`
       frontmatter {
         title
         heading
-        bodyImageAlt
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -78,13 +84,6 @@ export const servicePageQuery = graphql`
         image3 {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        bodyImage {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }
