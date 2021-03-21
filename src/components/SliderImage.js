@@ -14,7 +14,6 @@ const SliderImage = ({ title, image, position }) => (
         })
       `,
       backgroundPosition: `${position} center`,
-      backgroundAttachment: 'fixed',
     }}
   >
     <div
