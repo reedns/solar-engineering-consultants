@@ -2,7 +2,9 @@
 templateKey: service-page
 path: /services
 title: Services
-image: /img/solar-cell.jpg
+image: /img/md-aerial.jpg
+image2: /img/fresno-aerial.jpg
+image3: /img/IA1.jpg
 heading: Development
 ---
 Solar Engineering consultants offers project tailored services to developers, land owners, building owners,

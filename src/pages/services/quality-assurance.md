@@ -2,7 +2,9 @@
 templateKey: service-page
 path: /services
 title: Services
-image: /img/solar-cell.jpg
+image: /img/md-aerial.jpg
+image2: /img/fresno-aerial.jpg
+image3: /img/IA1.jpg
 heading: Owner’s Representative QA/QC & CM
 ---
 * Project and portfolio Owner’s representation and inspections

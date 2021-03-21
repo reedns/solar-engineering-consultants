@@ -3,37 +3,19 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
+import SimpleSlider  from '../components/SimpleSlider.js'
 
 export const ProjectPageTemplate = ({
   image,
+  image2,
+  image3,
   title,
   heading,
   description,
   intro,
 }) => (
   <div className="content">
-    <div
-      className="full-width-image-container margin-top-0"
-      style={{
-        backgroundImage: `
-          linear-gradient(
-            rgba(0, 0, 0, 0.1),
-            rgba(0, 0, 0, 0.1)
-          ),
-          url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })
-        `,
-        backgroundPosition: `bottom right`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <h2
-        className="has-text-weight-bold is-size-1 title-text"
-      >
-        {title}
-      </h2>
-    </div>
+    <SimpleSlider image={image} image2={image2} image3={image3} />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -67,6 +49,8 @@ const ProjectPage = ({ data }) => {
     <Layout>
       <ProjectPageTemplate
         image={frontmatter.image}
+        image2={frontmatter.image2}
+        image3={frontmatter.image3}
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
@@ -93,7 +77,21 @@ export const projectPageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 80) {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        image2 {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        image3 {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

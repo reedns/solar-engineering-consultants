@@ -2,8 +2,12 @@
 templateKey: service-page
 path: /services
 title: Services
-image: /img/solar-cell.jpg
+image: /img/md-aerial.jpg
+image2: /img/fresno-aerial.jpg
+image3: /img/IA1.jpg
 heading: Commissioning
+bodyImage: /img/tablet-blue-bg.jpg
+bodyImageAlt: Person holding a tablet
 ---
 Solar Engineering Consultants will provide thorough independent commissioning services for
 your project:

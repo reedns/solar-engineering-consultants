@@ -1,37 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import SimpleSlider  from '../components/SimpleSlider.js'
 
-export const ServicePageTemplate = ({ title, heading, content, image, contentComponent }) => {
+export const ServicePageTemplate = ({ title, heading, content, image, image2, image3, contentComponent, bodyImage, bodyImageAlt }) => {
   const PageContent = contentComponent || Content
 
   return (
     <div className="content">
-      <div
-        className="full-width-image-container margin-top-0"
-        style={{
-          backgroundImage: `
-            linear-gradient(
-              rgba(0, 0, 0, 0.2),
-              rgba(0, 0, 0, 0.2)
-            ),
-            url(${
-              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-            })
-          `,
-          backgroundPosition: 'bottom left',
-          backgroundAttachment: 'fixed',
-        }}
-      >
-        <h1
-          className="has-text-weight-bold is-size-1 title-text"
-          style={{ color: 'white', margin: '1rem 0 0' }}
-        >
-          {title}
-        </h1>
-      </div>
+      <SimpleSlider image={image} image2={image2} image3={image3} />
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
@@ -60,6 +39,8 @@ const ServicePage = ({ data }) => {
         title={post.frontmatter.title}
         content={post.html}
         image={post.frontmatter.image}
+        image2={post.frontmatter.image2}
+        image3={post.frontmatter.image3}
         heading={post.frontmatter.heading}
       />
     </Layout>
@@ -79,7 +60,29 @@ export const servicePageQuery = graphql`
       frontmatter {
         title
         heading
+        bodyImageAlt
         image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        image2 {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        image3 {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        bodyImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 80) {
               ...GatsbyImageSharpFluid

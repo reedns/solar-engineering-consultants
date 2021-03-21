@@ -3,9 +3,12 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import SimpleSlider  from '../components/SimpleSlider.js'
 
 export const IndexPageTemplate = ({
   image,
+  image2,
+  image3,
   title,
   heading,
   subheading,
@@ -14,46 +17,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `
-          linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })
-        `,
-        backgroundPosition: 'bottom center',
-        backgroundAttachment: 'fixed',
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'center',
-          flexDirection: 'column',
-        }}
-      >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen title-text"
-          style={{ textAlign: 'center' }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen title-text"
-          style={{ textAlign: 'center' }}
-        >
-          {subheading}
-        </h3>
-      </div>
-    </div>
+    <SimpleSlider image={image} image2={image2} image3={image3} />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -108,6 +72,8 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
+        image2={frontmatter.image2}
+        image3={frontmatter.image3}
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
@@ -136,7 +102,21 @@ export const pageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 80) {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        image2 {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        image3 {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

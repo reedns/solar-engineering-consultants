@@ -3,36 +3,14 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import SimpleSlider  from '../components/SimpleSlider.js'
 
-export const AboutPageTemplate = ({ title, content, image, contentComponent }) => {
+export const AboutPageTemplate = ({ title, content, image, image2, image3, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <div className="content">
-      <div
-        className="full-width-image-container margin-top-0"
-        style={{
-          backgroundImage: `
-            linear-gradient(
-              rgba(0, 0, 0, 0.2),
-              rgba(0, 0, 0, 0.2)
-            ),
-            url(${
-              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-            })
-          `,
-          backgroundPosition: 'bottom right',
-          backgroundAttachment: 'fixed',
-          backgroundSize: 'initial'
-        }}
-      >
-        <h2
-          className="has-text-weight-bold is-size-1 title-text"
-          style={{ color: 'white', margin: '1rem 0 0' }}
-        >
-          {title}
-        </h2>
-      </div>
+      <SimpleSlider image={image} image2={image2} image3={image3} />
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
@@ -73,6 +51,8 @@ const AboutPage = ({ data }) => {
         title={post.frontmatter.title}
         content={post.html}
         image={post.frontmatter.image}
+        image2={post.frontmatter.image2}
+        image3={post.frontmatter.image3}
       />
     </Layout>
   )
@@ -92,7 +72,21 @@ export const aboutPageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 80) {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        image2 {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        image3 {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

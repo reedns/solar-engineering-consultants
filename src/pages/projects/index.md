@@ -2,7 +2,9 @@
 templateKey: 'project-page'
 path: /projects
 title: SEC Projects
-image: /img/alternative-alternative-energy-clean-159397.jpg
+image: /img/md-aerial.jpg
+image2: /img/fresno-aerial.jpg
+image3: /img/IA1.jpg
 heading: Project Experience
 description: >
   The SEC principal has contracted services with over 1 GW of projects and directly
