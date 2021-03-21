@@ -5,7 +5,7 @@ title: Services
 image: /img/md-aerial.jpg
 image2: /img/fresno-aerial.jpg
 image3: /img/IA1.jpg
-heading: Performanc & Capacity Testing
+heading: Performance & Capacity Testing
 ---
 
 Solar Engineering Consultants has overseen performance and capacity testing of GW of operational power plants.   SEC has performance and capacity tested projects to procedures based on ASTM E2848 and IEC 61724-2 standards that compare measured and modeled system performance as a final step to commissioning.  Typically, the Capacity Testing procedure will be defined in the context of an EPC contract or exhibit and based on the ASTM E2848 or IEC 61724-2 standards.

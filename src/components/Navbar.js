@@ -77,8 +77,8 @@ render() {
                   <Link activeClassName="active" className="navbar-item" to="/services/commissioning">
                     Commissioning
                   </Link>
-                  <Link activeClassName="active" className="navbar-item" to="/services/astm-capacity-testing">
-                    ASTM Capacity Testing
+                  <Link activeClassName="active" className="navbar-item" to="/services/performance-capacity-testing">
+                    Performance & Capacity Testing
                   </Link>
                   <Link activeClassName="active" className="navbar-item" to="/services/quality-assurance">
                     Owner’s Representative QA/QC & CM
