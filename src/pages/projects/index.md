@@ -7,15 +7,7 @@ image2: /img/fresno-aerial.jpg
 image3: /img/IA1.jpg
 heading: Project Experience
 description: >
-  The SEC principal has contracted services with over 1 GW of projects and directly
-  overseen the development, engineering, management, construction, and commissioning
-  of more than 150 MW of operational utility scale and commercial solar PV assets. SEC has
-  worked on projects throughout the U.S. Including the states of California, Nevada,
-  Arizona, Idaho, Oregon, Indiana, Maryland, Vermont, and Massachusetts.  We possess
-  vast experience navigating all stages of the solar and energy storage project lifecycle
-  including development, entitlements, design optimization, interconnection, engineering,
-  construction, commissioning, and O&M facets of the project life cycle.  Below is a
-  sampling of SEC project experience.
+  SEC has contracted services with GWs of projects in all phases.  The SEC consulting team has directly overseen the complete engineering, permitting, management, construction, and commissioning of 100’s of MW of operational commercial and utility scale solar PV assets across the U.S.  The team has vast experience navigating all stages of the solar and energy storage project lifecycle, below is a list of some of our projects and recurring services.
 intro:
   blurbs:
     - image: /img/1.jpg
