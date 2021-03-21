@@ -74,14 +74,14 @@ render() {
                 </a>
 
                 <div className="navbar-dropdown">
+                  <Link activeClassName="active" className="navbar-item" to="/services/commissioning">
+                    Commissioning
+                  </Link>
                   <Link activeClassName="active" className="navbar-item" to="/services/astm-capacity-testing">
                     ASTM Capacity Testing
                   </Link>
-                  <Link activeClassName="active" className="navbar-item" to="/services/project-engineering">
-                    Project Engineering
-                  </Link>
-                  <Link activeClassName="active" className="navbar-item" to="/services/commissioning">
-                    Commissioning
+                  <Link activeClassName="active" className="navbar-item" to="/services/quality-assurance">
+                    Owner’s Representative QA/QC & CM
                   </Link>
                   <Link activeClassName="active" className="navbar-item" to="/services/development">
                     Development
@@ -89,14 +89,14 @@ render() {
                   <Link activeClassName="active" className="navbar-item" to="/services/asset-management">
                     Asset Management & Data Analytics
                   </Link>
-                  <Link activeClassName="active" className="navbar-item" to="/services/independent-engineering">
-                    Independent Engineering & Consultation
-                  </Link>
                   <Link activeClassName="active" className="navbar-item" to="/services/due-dilligence">
                     Due Dilligence
                   </Link>
-                  <Link activeClassName="active" className="navbar-item" to="/services/quality-assurance">
-                    Owner’s Representative QA/QC & CM
+                  <Link activeClassName="active" className="navbar-item" to="/services/independent-engineering">
+                    Independent Engineering & Consultation
+                  </Link>
+                  <Link activeClassName="active" className="navbar-item" to="/services/project-engineering">
+                    Project Engineering
                   </Link>
                   <Link activeClassName="active" className="navbar-item" to="/services/microgrid">
                     Microgrid & Edge Computing
