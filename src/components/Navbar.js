@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/sec-logo-drk-blue-green.jpg'
+import logo from '../img/sec-logo.png'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -77,7 +77,7 @@ render() {
                   <Link activeClassName="active" className="navbar-item" to="/services/commissioning">
                     Commissioning
                   </Link>
-                  <Link activeClassName="active" className="navbar-item" to="/services/performance-capacity-testing">
+                  <Link activeClassName="active" className="navbar-item" to="/services/astm-capacity-testing">
                     Performance & Capacity Testing
                   </Link>
                   <Link activeClassName="active" className="navbar-item" to="/services/quality-assurance">
@@ -89,8 +89,8 @@ render() {
                   <Link activeClassName="active" className="navbar-item" to="/services/asset-management">
                     Asset Management & Data Analytics
                   </Link>
-                  <Link activeClassName="active" className="navbar-item" to="/services/due-dilligence">
-                    Due Dilligence
+                  <Link activeClassName="active" className="navbar-item" to="/services/due-diligence">
+                    Due Diligence
                   </Link>
                   <Link activeClassName="active" className="navbar-item" to="/services/independent-engineering">
                     Independent Engineering & Consultation
