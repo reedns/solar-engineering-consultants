@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Content, { HTMLContent } from '../components/Content'
 
 import Layout from '../components/Layout'
 import SimpleSlider  from '../components/SimpleSlider.js'
@@ -13,45 +14,39 @@ export const IndexPageTemplate = ({
   heading,
   subheading,
   mainpitch,
-  info,
-  intro,
-}) => (
-  <div>
-    <SimpleSlider image={image} image2={image2} image3={image3} />
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
+  content,
+  contentComponent
+}) => {
+  const PageContent = contentComponent || Content
+
+  return(
+    <div>
+      <SimpleSlider image={image} image2={image2} image3={image3} />
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
                 <div className="content">
-                  <div className="tile">
-                    <h2 className="title">{mainpitch.title}</h2>
+                  <div className="content">
+                    <div className="tile">
+                      <h2 className="title">{mainpitch.title}</h2>
+                    </div>
                   </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <p>
-                      <strong>{info.lead}</strong>
-                      {info.content}
-                    </p>
-                    <p>
-                      <strong>{info.nextLead}</strong>
-                      {info.nextContent}
-                    </p>
-                    <p>
-                      {info.closing}
-                    </p>
+                  <div className="columns">
+                    <div className="column is-12">
+                      <PageContent className="content" content={content} />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
-)
+      </section>
+    </div>
+  )
+}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -59,27 +54,24 @@ IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
-  info: PropTypes.object,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+  content: PropTypes.string,
 }
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { markdownRemark: post } = data
 
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
-        image2={frontmatter.image2}
-        image3={frontmatter.image3}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        info={frontmatter.info}
-        intro={frontmatter.intro}
+        image={post.frontmatter.image}
+        image2={post.frontmatter.image2}
+        image3={post.frontmatter.image3}
+        title={post.frontmatter.title}
+        heading={post.frontmatter.heading}
+        subheading={post.frontmatter.subheading}
+        mainpitch={post.frontmatter.mainpitch}
+        contentComponent={HTMLContent}
+        content={post.html}
       />
     </Layout>
   )
@@ -90,6 +82,7 @@ IndexPage.propTypes = {
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
     }),
+    contentComponent: PropTypes.func,
   }),
 }
 
@@ -98,6 +91,7 @@ export default IndexPage
 export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      html
       frontmatter {
         title
         image {
@@ -125,27 +119,6 @@ export const pageQuery = graphql`
         subheading
         mainpitch {
           title
-        }
-        info {
-          lead
-          content
-          nextLead
-          nextContent
-          closing
-        }
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
         }
       }
     }
