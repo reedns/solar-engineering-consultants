@@ -69,16 +69,16 @@ render() {
             <div className="navbar-end has-text-left">
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <a className={`navbar-link ${this.state.servicesActive ? 'active' : ''}`} data-active-path='services'>
+                <Link className={`navbar-link ${this.state.servicesActive ? 'active' : ''}`} to="/services" data-active-path='services'>
                   Services
-                </a>
+                </Link>
 
                 <div className="navbar-dropdown">
                   <Link activeClassName="active" className="navbar-item" to="/services/commissioning">
                     Commissioning
                   </Link>
                   <Link activeClassName="active" className="navbar-item" to="/services/astm-capacity-testing">
-                    Performance & Capacity Testing
+                    ASTM E2848 Performance & Capacity Testing
                   </Link>
                   <Link activeClassName="active" className="navbar-item" to="/services/quality-assurance">
                     Owner’s Representative QA/QC & CM

@@ -113,8 +113,6 @@ export const projectPageQuery = graphql`
             power
             text
           }
-          heading
-          description
         }
       }
     }
