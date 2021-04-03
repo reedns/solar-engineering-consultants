@@ -2,8 +2,8 @@
 templateKey: index-page
 title: Solar Engineering Consultants
 image: /img/md-aerial.jpg
-image2: /img/fresno-aerial.jpg
-image3: /img/IA1.jpg
+image2: /img/IA1.jpg
+image3: /img/fresno-aerial.jpg
 heading: Solar Engineering Consultants
 subheading: Engineering, Development & Commissioning Expertise
 mainpitch:

@@ -3,11 +3,11 @@ templateKey: 'project-page'
 path: /projects
 title: SEC Projects
 image: /img/md-aerial.jpg
-image2: /img/fresno-aerial.jpg
-image3: /img/IA1.jpg
+image2: /img/IA1.jpg
+image3: /img/fresno-aerial.jpg
 heading: Project Experience
 description: >
-  SEC has contracted services with GWs of projects in all phases.  The SEC consulting team has directly overseen the complete engineering, permitting, management, construction, and commissioning of 100’s of MW of operational commercial and utility scale solar PV assets across the U.S.  The team has vast experience navigating all stages of the solar and energy storage project lifecycle, below is a list of some of our projects and recurring services.
+  SEC has contracted services with multiple GW's of projects in all phases.  The SEC consulting team has directly overseen the complete engineering, permitting, management, construction, and commissioning of 100’s of MW of operational commercial and utility scale solar PV assets across the U.S.  The team has vast experience navigating all stages of the solar and energy storage project lifecycle, below is a list of some of our projects and recurring services.
 intro:
   blurbs:
     - image: /img/1.jpg
@@ -15,8 +15,9 @@ intro:
       utility: SCE & LADWP
       lead: "ASTM E2848 & IEC 61724 based Capacity & Performance Test administration:"
       power: 2 GW
+      image_credit: Marketplace
       text: >
-        Dozens of projects across the U.S. from 5 MW to 230 MW in scale, incl bi-facial.  Regression analysis performance comparison of test vs modeled data.
+        Dozens of projects across the U.S. from 5 MW to 600 MW in scale, including bi-facial.  Regression analysis performance comparison of test vs modeled data.
         Services include performance analytics to troubleshoot plant underperformance, updates throughout the test process, collaboration with EPC, SCADA provider,
         and owner throughout test period, certified performance with progress and final test reports for owners, bank engineers, and utilities.
     - image: /img/image9.jpg
@@ -31,6 +32,7 @@ intro:
       title: Project Commissioning Services – 230 MW PV SAT, Odessa, TX
       utility: Placeholder
       lead: "Project Commissioning Management:"
+      image_credit: Charlot Energy
       text: >
         Managed, tracked and drove commissioning and start-up process, managed and scheduled resources, stakeholders, schedules, and plant performance issues.
         Final QA audits.  Managed utility, performance, and reactive power tests.  Commissioning & certification reports.

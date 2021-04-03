@@ -17,13 +17,11 @@ const FeatureGrid = ({ gridItems }) => (
           <div className="column is-10 is-offset-1">
             <div className="columns is-vcentered ">
               <div key={item.text} className="column is-one-third">
-                <section className="section">
-                  <div className="has-text-centered">
-                    <div style={imgContainerStyle}>
-                      <PreviewCompatibleImage imageInfo={item} />
-                    </div>
+                <div className="has-text-centered">
+                  <div style={imgContainerStyle}>
+                    <PreviewCompatibleImage imageInfo={item} />
                   </div>
-                </section>
+                </div>
               </div>
               <div className="column is-two-thirds">
                 <h4 style={titleStyle}>{item.title} </h4>

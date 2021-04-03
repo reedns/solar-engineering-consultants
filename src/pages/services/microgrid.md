@@ -3,12 +3,13 @@ templateKey: service-page
 path: /services
 title: Services
 image: /img/md-aerial.jpg
-image2: /img/fresno-aerial.jpg
-image3: /img/IA1.jpg
+image2: /img/IA1.jpg
+image3: /img/fresno-aerial.jpg
 heading: Microgrid & Edge Computing
 ---
 
-Solar Engineering Consultants works with blockchain and edge computing host service providers by offering services which include:
+Solar Engineering Consultants works with grid support, edge computing and blockchain providers by
+offering services which include:
 
 * Sourcing energy projects for collocated servers and computing equipment
 * Design integration into existing power plant operations

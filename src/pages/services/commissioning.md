@@ -3,8 +3,8 @@ templateKey: service-page
 path: /services
 title: Services
 image: /img/md-aerial.jpg
-image2: /img/fresno-aerial.jpg
-image3: /img/IA1.jpg
+image2: /img/IA1.jpg
+image3: /img/fresno-aerial.jpg
 heading: Commissioning
 bodyImage: /img/tablet-blue-bg.jpg
 bodyImageAlt: Person holding a tablet
@@ -17,22 +17,13 @@ your project:
 * Onsite Commissioning oversight
 * Commissioning oversight and plan development, review (desktop)
 * Engineered drawing review pre- and post-construction
+* Equipment start-up & vendor coordination
 * Onsite QA pre-startup inspections:
-  * Equipment installation conforms to engineered & manufacturer specification
-  * Conductors sized according to plans
-  * Visual inspections of installed equipment, spot check torquing, terminations
-  * Module, tracker, racking inspections
-  * Wire management
-  * Ground continuity
-  * Foundation & trench inspections
-  * Redline drawing review confirmation
-  * Special inspection report review
-* Commissioning & Functional Testing oversight:
   * Vendor management and equipment startup monitoring
   * PV string I-V curve tracing
   * Voc, Isc and megger testing
   * Operational current testing
-  * Performance analytics
+  * Performance engineering
   * Utility witness testing oversight & monitoring
   * Communications and SCADA commissioning
   * Thermographic imaging analysis of modules and equipment
