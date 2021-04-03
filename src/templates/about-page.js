@@ -28,7 +28,7 @@ export const AboutPageTemplate = ({
                   <img
                     style={{width: 128, borderRadius: '50%'}}
                     alt="Caleb Saunders"
-                    src="/img/profile pic.png"
+                    src="/img/profile pic.jpg"
                   >
                   </img>
                   <p>Caleb Saunders</p>

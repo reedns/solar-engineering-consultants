@@ -20,6 +20,7 @@ const FeatureGrid = ({ gridItems }) => (
                 <div className="has-text-centered">
                   <div style={imgContainerStyle}>
                     <PreviewCompatibleImage imageInfo={item} />
+                    {item.image_credit ? <small style={{ fontSize: '0.75rem' }}>Photo Credit: {item.image_credit}</small> : null }
                   </div>
                 </div>
               </div>

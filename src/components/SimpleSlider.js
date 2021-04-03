@@ -23,7 +23,7 @@ const SimpleSlider = ({ image, image2, image3 }) => (
       <SliderImage image={image2} position={'top'} title={'Owner’s Representative & Quality Inspection Services'} />
     </div>
     <div>
-      <SliderImage image={image3} position={'top'} title={'Commissioning & Testing Services'} />
+      <SliderImage image={image3} position={'center'} title={'Commissioning & Testing Services'} />
     </div>
   </Slider>
 )

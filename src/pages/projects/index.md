@@ -28,7 +28,7 @@ intro:
       text: >
         Managed, tracked, and drove commissioning and start-up process, managed and scheduled resources, stakeholders, schedules, and plant performance issues.
         Final QA audits.  Managed utility, performance, and reactive power tests.  Commissioning & certification reports.
-    - image: /img/image6.jpg
+    - image: /img/image32.png
       title: Project Commissioning Services – 230 MW PV SAT, Odessa, TX
       utility: Placeholder
       lead: "Project Commissioning Management:"

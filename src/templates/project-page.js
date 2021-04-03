@@ -112,6 +112,7 @@ export const projectPageQuery = graphql`
             lead
             power
             text
+            image_credit
           }
         }
       }
