@@ -17,10 +17,10 @@ const FeatureGrid = ({ gridItems }) => (
           <div className="column is-10 is-offset-1">
             <div className="columns is-vcentered ">
               <div key={item.text} className="column is-one-third">
-                <div className="has-text-centered">
+                <div>
                   <div style={imgContainerStyle}>
                     <PreviewCompatibleImage imageInfo={item} />
-                    {item.image_credit ? <small style={{ fontSize: '0.75rem' }}>Photo Credit: {item.image_credit}</small> : null }
+                    {item.image_credit ? <small style={{ fontSize: '0.5rem' }}>Photo Credit: {item.image_credit}</small> : null }
                   </div>
                 </div>
               </div>
