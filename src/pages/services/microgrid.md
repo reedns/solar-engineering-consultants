@@ -6,6 +6,7 @@ image: /img/md-aerial.jpg
 image2: /img/IA1.jpg
 image3: /img/fresno-aerial.jpg
 heading: Microgrid & Edge Computing
+background_image: /img/image24.png
 ---
 
 Solar Engineering Consultants works with grid support, edge computing and blockchain providers by

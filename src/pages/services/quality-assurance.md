@@ -6,6 +6,7 @@ image: /img/md-aerial.jpg
 image2: /img/IA1.jpg
 image3: /img/fresno-aerial.jpg
 heading: Owner’s Representative QA/QC & CM
+background_image: /img/service-image9.png
 ---
 * Project and portfolio Owner’s representation and inspections
 * Stakeholder management

@@ -6,6 +6,7 @@ image: /img/md-aerial.jpg
 image2: /img/IA1.jpg
 image3: /img/fresno-aerial.jpg
 heading: Due Diligence
+background_image: /img/service-image7.png
 ---
 
 Solar Engineering Consultants offers thorough and efficient due diligence services to ensure

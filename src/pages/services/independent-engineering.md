@@ -6,6 +6,7 @@ image: /img/md-aerial.jpg
 image2: /img/IA1.jpg
 image3: /img/fresno-aerial.jpg
 heading: Independent Engineering & Consultation
+background_image: /img/service-image15.png
 ---
 
 Solar Engineering Consultants offers high quality IE & QA services across the board and has expertise

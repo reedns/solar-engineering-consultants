@@ -6,6 +6,7 @@ image: /img/md-aerial.jpg
 image2: /img/IA1.jpg
 image3: /img/fresno-aerial.jpg
 heading: Asset Management & Data Analytics
+background_image: /img/image2.png
 ---
 
 SEC provides comprehensive asset performance services:

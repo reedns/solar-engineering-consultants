@@ -6,6 +6,7 @@ image: /img/md-aerial.jpg
 image2: /img/IA1.jpg
 image3: /img/fresno-aerial.jpg
 heading: Project Engineering
+background_image: /img/image25.png
 ---
 Solar Engineering consultants provides detailed project engineering services for commercial, C&I, and utility solar and storage projects:
 

@@ -5,6 +5,7 @@ title: Services
 image: /img/md-aerial.jpg
 image2: /img/IA1.jpg
 image3: /img/fresno-aerial.jpg
+background_image: /img/service-image8.png
 heading: Services
 ---
 

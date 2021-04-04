@@ -6,6 +6,7 @@ image: /img/md-aerial.jpg
 image2: /img/IA1.jpg
 image3: /img/fresno-aerial.jpg
 heading: Development
+background_image: /img/image1.png
 ---
 Solar Engineering consultants offers project tailored services to developers, land owners, building owners,
 green data center providers, and investors who are looking to install or acquire a solar project.

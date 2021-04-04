@@ -6,8 +6,7 @@ image: /img/md-aerial.jpg
 image2: /img/IA1.jpg
 image3: /img/fresno-aerial.jpg
 heading: Commissioning
-bodyImage: /img/tablet-blue-bg.jpg
-bodyImageAlt: Person holding a tablet
+background_image: /img/image22.png
 ---
 Solar Engineering Consultants will provide thorough independent commissioning services for
 your project:
