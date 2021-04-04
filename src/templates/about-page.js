@@ -16,28 +16,30 @@ export const AboutPageTemplate = ({
   const PageContent = contentComponent || Content
 
   return (
-    <div className="content">
+    <div>
       <SimpleSlider image={image} image2={image2} image3={image3} />
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                <PageContent className="content" content={content} />
-                <div className="has-text-centered">
-                  <img
-                    style={{width: 128, borderRadius: '50%'}}
-                    alt="Caleb Saunders"
-                    src="/img/profile pic.png"
-                  >
-                  </img>
-                  <p>Caleb Saunders</p>
+      <div className="content">
+        <section className="section section--gradient">
+          <div className="container">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <div className="section">
+                  <PageContent className="content" content={content} />
+                  <div className="has-text-centered">
+                    <img
+                      style={{width: 128, borderRadius: '50%'}}
+                      alt="Caleb Saunders"
+                      src="/img/profile pic.png"
+                    >
+                    </img>
+                    <p>Caleb Saunders</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   )
 }

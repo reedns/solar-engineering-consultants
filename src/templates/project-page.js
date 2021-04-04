@@ -14,21 +14,23 @@ export const ProjectPageTemplate = ({
   description,
   intro,
 }) => (
-  <div className="content">
+  <div>
     <SimpleSlider image={image} image2={image2} image3={image3} />
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-              <p>{description}</p>
+    <div className="content">
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
+                <p>{description}</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <Features gridItems={intro.blurbs} />
+      </section>
+      <Features gridItems={intro.blurbs} />
+    </div>
   </div>
 )
 

@@ -18,24 +18,26 @@ export const ServicePageTemplate = ({
   const PageContent = contentComponent || Content
 
   return (
-    <div className="content">
+    <div>
       <SimpleSlider image={image} image2={image2} image3={image3} />
-      <ServiceBackground image={backgroundImage}>
-        <section className="section section--gradient">
-          <div className="container">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <div className="section">
-                  <h2 className="has-text-weight-semibold is-size-2">
-                    {heading}
-                  </h2>
-                  <PageContent className="content" content={content} />
+      <div className="content">
+        <ServiceBackground image={backgroundImage}>
+          <section className="section section--gradient">
+            <div className="container">
+              <div className="columns">
+                <div className="column is-10 is-offset-1">
+                  <div className="section">
+                    <h2 className="has-text-weight-semibold is-size-2">
+                      {heading}
+                    </h2>
+                    <PageContent className="content" content={content} />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-      </ServiceBackground>
+          </section>
+        </ServiceBackground>
+      </div>
     </div>
   )
 }
