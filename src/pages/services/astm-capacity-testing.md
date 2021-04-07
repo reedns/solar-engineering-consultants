@@ -22,7 +22,7 @@ procedures based on these standards. Leveraging the experience of SEC with Perfo
 Capacity Testing will save you time, headache, money, and frustration, ensuring you meet your
 Substantial Completion or Commercial Operation deadline.
 
-![Target & Measured Capacity vs Irradiance](/img/astm-capacity-testing.jpg)
+![Target & Measured Capacity vs Irradiance](/img/astm-capacity-testing.png)
 
 To find out more about ASTM E2848 or IEC 61724 Testing, please review the links below or
 [contact us](mailto: caleb@solarengineeringconsultants.com).

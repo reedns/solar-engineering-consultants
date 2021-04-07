@@ -64,7 +64,10 @@ export default class Index extends React.Component {
               <form
                 name="contact"
                 method="post"
-                action="https://getform.io/f/77b74784-4632-4ace-b554-5397075f9cb7"
+								action="/contact/thanks/"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit={this.handleSubmit}
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 <input type="hidden" name="form-name" value="contact" />

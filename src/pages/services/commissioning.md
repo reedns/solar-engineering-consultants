@@ -1,6 +1,6 @@
 ---
 templateKey: service-page
-path: /services
+path: /services/commissioning
 title: Services
 image: /img/md-aerial.jpg
 image2: /img/IA1.jpg

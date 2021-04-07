@@ -13,15 +13,17 @@ export const ServicePageTemplate = ({
   image2,
   image3,
   contentComponent,
-  backgroundImage
+  backgroundImage,
+  path
 }) => {
   const PageContent = contentComponent || Content
+  const bgPosition = path == '/services/commissioning' ? 'top' : 'center'
 
   return (
     <div>
       <SimpleSlider image={image} image2={image2} image3={image3} />
       <div className="content">
-        <ServiceBackground image={backgroundImage}>
+        <ServiceBackground image={backgroundImage} position={bgPosition}>
           <section className="section section--gradient">
             <div className="container">
               <div className="columns">
@@ -50,6 +52,7 @@ const ServicePage = ({ data }) => {
       <ServicePageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        path={post.frontmatter.path}
         content={post.html}
         image={post.frontmatter.image}
         image2={post.frontmatter.image2}
@@ -73,6 +76,7 @@ export const servicePageQuery = graphql`
       html
       frontmatter {
         title
+        path
         heading
         image {
           childImageSharp {

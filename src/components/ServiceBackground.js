@@ -1,6 +1,6 @@
 import React from "react";
 
-const ServiceBackground = ({ image, children }) => {
+const ServiceBackground = ({ image, children, position = 'center' }) => {
   if (image) {
     return(
       <div
@@ -10,7 +10,7 @@ const ServiceBackground = ({ image, children }) => {
               !!image.childImageSharp ? image.childImageSharp.fluid.src : image
             })
           `,
-          backgroundPosition: `center center`,
+          backgroundPosition: `${position} center`,
           backgroundSize: 'cover'
         }}
       >
