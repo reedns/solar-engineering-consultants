@@ -77,7 +77,7 @@ render() {
                   <Link activeClassName="active" className="navbar-item" to="/services/commissioning">
                     Commissioning
                   </Link>
-                  <Link activeClassName="active" className="navbar-item" to="/services/astm-capacity-testing">
+                  <Link activeClassName="active" className="navbar-item" to="/astm-capacity-testing">
                     ASTM E2848 Performance & Capacity Testing
                   </Link>
                   <Link activeClassName="active" className="navbar-item" to="/services/quality-assurance">
