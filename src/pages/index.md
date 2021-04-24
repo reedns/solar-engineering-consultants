@@ -8,22 +8,6 @@ heading: Solar Engineering Consultants
 subheading: Engineering, Development & Commissioning Expertise
 mainpitch:
   title: Dedicated to providing Expert Quality, Efficient Solutions for your Project to help reduce LCOE and OpEx
-main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
-  image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
-  image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
 ---
 **Solar Engineering Consultants (SEC) specializes in helping owners, developers, EPC’s, investors, and
 asset managers with renewable energy and BESS projects from concept to project completion.** We are a network of engineers and consultants who have the expertise to help you through the early stages of
