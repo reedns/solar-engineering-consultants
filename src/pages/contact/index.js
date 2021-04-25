@@ -13,7 +13,7 @@ export default class Index extends React.Component {
     super(props)
     this.state = {
       isValidated: false,
-      sectionHeight: '100%'
+      sectionHeight: '90vh'
     }
   }
 
@@ -38,8 +38,8 @@ export default class Index extends React.Component {
 
   updateSectionHeight = () => {
     console.log(window.innerHeight)
-    if(window.innerHeight > 600) {
-      this.setState({ sectionHeight: '78vh' })
+    if(window.innerHeight > 750) {
+      this.setState({ sectionHeight: '83vh' })
     } else {
       this.setState({ sectionHeight: '100%' })
     }
@@ -68,6 +68,7 @@ export default class Index extends React.Component {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
+                style={{ marginBottom: '3%' }}
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 <input type="hidden" name="form-name" value="contact" />
@@ -127,6 +128,18 @@ export default class Index extends React.Component {
                   </button>
                 </div>
               </form>
+              <div className="columns">
+                <div className="column"></div>
+                <div className="column" style={{ border: '1px solid #333' }}>
+                  <p>
+                    Solar Engineering Consultants <br/>
+                    1855 First Ave <br/>
+                    Suite 103 <br/>
+                    San Diego, CA 92101 <br/>
+                  </p>
+                </div>
+                <div className="column"></div>
+              </div>
             </div>
           </div>
         </section>

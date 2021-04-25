@@ -13,7 +13,7 @@ your project:
 
 * ASTM E2848 Capacity/Performance Testing administration
 * Monitoring & Capacity evaluation to IEC 61724-1 & IEC 61724-2 standards
-* Onsite Commissioning oversight
+* Onsite Commissioning oversight & resource scheduling
 * Commissioning oversight and plan development, review (desktop)
 * Engineered drawing review pre- and post-construction
 * Equipment start-up & vendor coordination

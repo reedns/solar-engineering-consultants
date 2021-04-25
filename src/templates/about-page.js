@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import SimpleSlider  from '../components/SimpleSlider.js'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const AboutPageTemplate = ({
   title,
@@ -11,6 +12,7 @@ export const AboutPageTemplate = ({
   image,
   image2,
   image3,
+  profileImage,
   contentComponent
 }) => {
   const PageContent = contentComponent || Content
@@ -26,12 +28,10 @@ export const AboutPageTemplate = ({
                 <div className="section">
                   <PageContent className="content" content={content} />
                   <div className="has-text-centered">
-                    <img
-                      style={{width: 128, borderRadius: '50%'}}
-                      alt="Caleb Saunders"
-                      src="/img/profile pic.png"
-                    >
-                    </img>
+                    <PreviewCompatibleImage
+                      imageInfo={{ alt: 'Caleb Saunders', childImageSharp: profileImage, image: profileImage }}
+                      optionalStyles={{ width: 128, borderRadius: '50%', margin: '0 auto' }}
+                    />
                     <p>Caleb Saunders</p>
                   </div>
                 </div>
@@ -62,6 +62,7 @@ const AboutPage = ({ data }) => {
         image={post.frontmatter.image}
         image2={post.frontmatter.image2}
         image3={post.frontmatter.image3}
+        profileImage={post.frontmatter.profileImage}
       />
     </Layout>
   )
@@ -96,6 +97,13 @@ export const aboutPageQuery = graphql`
         image3 {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        profileImage {
+          childImageSharp {
+            fluid(maxWidth: 128, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

@@ -27,7 +27,7 @@ const TemplateWrapper = ({ children, contentHeight, footerHeight }) => {
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
       <Navbar />
-      <div className="has-navbar-fixed-top">{children}</div>
+      <div className="has-navbar-fixed-top" style={{ marginTop: '60px' }}>{children}</div>
       <Footer />
     </div>
   )
