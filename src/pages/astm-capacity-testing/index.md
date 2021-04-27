@@ -25,7 +25,7 @@ Substantial Completion or Commercial Operation deadline.
 ![Target & Measured Capacity vs Irradiance](/img/astm-capacity-testing.png)
 
 To find out more about ASTM E2848 or IEC 61724 Testing, please review the links below or
-[contact us](mailto: caleb@solarengineeringconsultants.com).
+<a href="mailto:caleb@solarengineeringconsultants.com">contact us</a>
 
 ### Additional Links
 
