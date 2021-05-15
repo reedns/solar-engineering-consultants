@@ -26,7 +26,7 @@ export default class Index extends React.Component {
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
-    fetch('https://getform.io/f/77b74784-4632-4ace-b554-5397075f9cb7', {
+    fetch('https://getform.io/f/aa9fbbdd-67ad-4142-b133-47c17f23bf5c', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
@@ -67,7 +67,7 @@ export default class Index extends React.Component {
                 <form
                   name="contact"
                   method="post"
-                  action="https://getform.io/f/77b74784-4632-4ace-b554-5397075f9cb7"
+                  action="https://getform.io/f/aa9fbbdd-67ad-4142-b133-47c17f23bf5c"
                   style={{ marginBottom: '3%' }}
                 >
                   {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
