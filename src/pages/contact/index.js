@@ -1,6 +1,8 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import ReCaptchaButton from '../../components/ReCaptchaButton'
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3"
 
 function encode(data) {
   return Object.keys(data)
@@ -24,7 +26,7 @@ export default class Index extends React.Component {
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
-    fetch('/', {
+    fetch('https://getform.io/f/77b74784-4632-4ace-b554-5397075f9cb7', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
@@ -61,73 +63,71 @@ export default class Index extends React.Component {
           <div className="container">
             <div className="content">
               <h1>Contact</h1>
-              <form
-                name="contact"
-                method="post"
-								action="/contact/thanks/"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                onSubmit={this.handleSubmit}
-                style={{ marginBottom: '3%' }}
-              >
-                {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                <input type="hidden" name="form-name" value="contact" />
-                <div hidden>
-                  <label>
-                    Don’t fill this out:{' '}
-                    <input name="bot-field" onChange={this.handleChange} />
-                  </label>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor={'name'}>
-                    Your name
-                  </label>
-                  <div className="control">
-                    <input
-                      className="input"
-                      type={'text'}
-                      name={'name'}
-                      onChange={this.handleChange}
-                      id={'name'}
-                      required={true}
-                    />
+              <GoogleReCaptchaProvider reCaptchaKey="6LcgYNYaAAAAAMrL1xmDbzDidgweyvNLGxJstIRE">
+                <form
+                  name="contact"
+                  method="post"
+                  action="https://getform.io/f/77b74784-4632-4ace-b554-5397075f9cb7"
+                  style={{ marginBottom: '3%' }}
+                >
+                  {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" id="captchaResponse" name="g-recaptcha-response" />
+                  <div hidden>
+                    <label>
+                      Don’t fill this out:{' '}
+                      <input name="bot-field" onChange={this.handleChange} />
+                    </label>
                   </div>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor={'email'}>
-                    Email
-                  </label>
-                  <div className="control">
-                    <input
-                      className="input"
-                      type={'email'}
-                      name={'email'}
-                      onChange={this.handleChange}
-                      id={'email'}
-                      required={true}
-                    />
+                  <div className="field">
+                    <label className="label" htmlFor={'name'}>
+                      Your name
+                    </label>
+                    <div className="control">
+                      <input
+                        className="input"
+                        type={'text'}
+                        name={'name'}
+                        onChange={this.handleChange}
+                        id={'name'}
+                        required={true}
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor={'message'}>
-                    Message
-                  </label>
-                  <div className="control">
-                    <textarea
-                      className="textarea"
-                      name={'message'}
-                      onChange={this.handleChange}
-                      id={'message'}
-                      required={true}
-                    />
+                  <div className="field">
+                    <label className="label" htmlFor={'email'}>
+                      Email
+                    </label>
+                    <div className="control">
+                      <input
+                        className="input"
+                        type={'email'}
+                        name={'email'}
+                        onChange={this.handleChange}
+                        id={'email'}
+                        required={true}
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="field">
-                  <button className="button is-link" type="submit">
-                    Send
-                  </button>
-                </div>
-              </form>
+                  <div className="field">
+                    <label className="label" htmlFor={'message'}>
+                      Message
+                    </label>
+                    <div className="control">
+                      <textarea
+                        className="textarea"
+                        name={'message'}
+                        onChange={this.handleChange}
+                        id={'message'}
+                        required={true}
+                      />
+                    </div>
+                  </div>
+                  <div className="field">
+                    <ReCaptchaButton />
+                  </div>
+                </form>
+              </GoogleReCaptchaProvider>
               <div className="columns">
                 <div className="column"></div>
                 <div className="column" style={{ border: '1px solid #333' }}>
